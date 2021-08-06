@@ -1,5 +1,5 @@
 'use strict';
-
+var sass = require('gulp-sass')(require('sass'));
 global.$ = {
     gulp: require('gulp'),
     del: require('del'),
@@ -10,7 +10,7 @@ global.$ = {
     cheerio: require('gulp-cheerio'),
     replace: require('gulp-replace'),
     svgSprite: require('gulp-svg-sprite'),
-    sass: require('gulp-sass'),
+    sass: sass,
     npmDist: require('gulp-npm-dist'),
     newer: require('gulp-newer'),
     rename: require('gulp-rename'),
@@ -29,6 +29,7 @@ global.$ = {
     autoprefixer: require('autoprefixer'),
     postcssPresetEnv: require('postcss-preset-env'),
     cssnano: require('cssnano'),
+    postcssInlineSvg: require('postcss-inline-svg'),
     nested: require('postcss-nested'),
     plumber: require('gulp-plumber'),
     webpack: require('webpack-stream'),

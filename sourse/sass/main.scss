@@ -1,4 +1,9 @@
 $output-bourbon-deprecation-warnings: false;
+  @use "sass:list";
+  @use "sass:map";
+  @use "sass:math";
+  @use "sass:meta";
+
 // @import "mq";
 @import "bourbon/app/assets/stylesheets/bourbon";
 // @import "../../node_modules/rfs/scss";
@@ -18,8 +23,7 @@ $output-bourbon-deprecation-warnings: false;
 // Layout & components
 
 @import "./node_modules/bootstrap/scss/functions";
-@import "vars";
-@import "./node_modules/bootstrap/scss/functions";
+@import "vars"; 
 @import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/mixins";
 @import "./node_modules/bootstrap/scss/utilities";
@@ -55,7 +59,8 @@ $output-bourbon-deprecation-warnings: false;
 // @import "./node_modules/bootstrap/scss/carousel";
 // @import "./node_modules/bootstrap/scss/spinners";
 // @import "./node_modules/bootstrap/scss/offcanvas";
-
+// @import "./node_modules/bootstrap/scss/offcanvas";
+// @import "./node_modules/bootstrap/scss/placeholders";
 // Helpers
 @import "./node_modules/bootstrap/scss/helpers";
 

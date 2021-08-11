@@ -30,7 +30,7 @@ body {
 		}
 		margin-right: var(--spacing-end);
 	}
-	// min-width: 320px; 
+	// min-width: 575px; 
 	-webkit-font-smoothing: antialiased;
 	position: relative;
 	overflow-x: hidden; 
@@ -126,7 +126,7 @@ body {
 
 
 .mono {
-	font-family: $font-family-monospace;
+	font-family: $font-family-code;
 }
 
 .small {

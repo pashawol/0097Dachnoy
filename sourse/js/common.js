@@ -18,7 +18,7 @@ const JSCCommon = {
 	menuMobileLink: [].slice.call(document.querySelectorAll(".menu-mobile--js ul li a")),
 
 	modalCall() {
-		const link = "[data-fancybox]";
+		const link = ".link-modal-js";
 
 		Fancybox.bind(link, {
 			arrows: false,
@@ -282,7 +282,7 @@ const $ = jQuery;
 
 function eventHandler() {
 	// JSCCommon.ifie();
-	// JSCCommon.modalCall();
+	JSCCommon.modalCall();
 	// JSCCommon.tabscostume('.tabs--js');
 	// JSCCommon.mobileMenu();
 	// JSCCommon.inputMask();

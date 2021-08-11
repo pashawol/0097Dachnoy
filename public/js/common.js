@@ -22,7 +22,7 @@ const JSCCommon = {
 	menuMobileLink: [].slice.call(document.querySelectorAll(".menu-mobile--js ul li a")),
 
 	modalCall() {
-		const link = "[data-fancybox]";
+		const link = ".link-modal-js";
 		Fancybox.bind(link, {
 			arrows: false,
 			infobar: false,
@@ -300,8 +300,7 @@ const $ = jQuery;
 
 function eventHandler() {
 	// JSCCommon.ifie();
-	// JSCCommon.modalCall();
-	// JSCCommon.tabscostume('.tabs--js');
+	JSCCommon.modalCall(); // JSCCommon.tabscostume('.tabs--js');
 	// JSCCommon.mobileMenu();
 	// JSCCommon.inputMask();
 	// JSCCommon.sendForm();
@@ -309,6 +308,7 @@ function eventHandler() {
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	// JSCCommon.animateScroll();
 	// JSCCommon.CustomInputFile(); 
+
 	var x = window.location.host;
 	let screenName;
 	screenName = document.body.dataset.bg;

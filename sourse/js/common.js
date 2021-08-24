@@ -53,7 +53,7 @@ const JSCCommon = {
 		// });
 
 		$(".modal-close-js").click(function () {
-			fancybox.close();
+			Fancybox.close();
 		})
 		// fancybox.defaults.backFocus = false;
 		const linkModal = document.querySelectorAll(link);
@@ -213,7 +213,7 @@ const JSCCommon = {
 				data: data,
 			}).done(function (data) {
 
-				fancybox.close();
+				Fancybox.close();
 				Fancybox.show([{ src: "#modal-thanks", type: "inline" }]);
 				// window.location.replace("/thanks.html");
 				setTimeout(function () {

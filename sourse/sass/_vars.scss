@@ -1,16 +1,16 @@
-$em-base: 20px;
+$rfs-rem-value: 16 !default;
+$em-base: $rfs-rem-value * 1px;
 $small: rem(14);
 $url: '../img/';
 $path2: '@2x/';
 $path1: '@1x/';
 $rfs-breakpoint: 1200px !default;
-$rfs-rem-value: 16 !default;
 
-$themeColor: $primary !default;
-$colors: (
-  'white': #ffffff,
-  'black': $body-color,
-) !default;
+// $themeColor: $primary !default;
+// $colors: (
+//   'white': #ffffff,
+//   'black': $body-color,
+// ) !default;
 
 $font-family-sans-serif: $default-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
@@ -102,7 +102,8 @@ $dark: $gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
-$theme-colors: ("primary": $primary,
+$theme-colors: (
+  "primary": $primary,
   "secondary": $secondary,
   "success": $success,
   "info": $info,
@@ -111,6 +112,14 @@ $theme-colors: ("primary": $primary,
   "light": $light,
   "dark": $dark) !default;
 // scss-docs-end theme-colors-map
+
+$theme-colors: map-remove($theme-colors, 
+"info", 
+"light", 
+"dark",  
+"success",
+'warning', 
+);
 
 // scss-docs-start theme-colors-rgb
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
@@ -141,7 +150,7 @@ $enable-rounded: true !default;
 $enable-shadows: false !default;
 $enable-gradients: false !default;
 $enable-transitions: true !default;
-$enable-reduced-motion: true !default;
+$enable-reduced-motion: false !default;
 $enable-smooth-scroll: true !default;
 $enable-grid-classes: true !default;
 $enable-cssgrid: false !default;

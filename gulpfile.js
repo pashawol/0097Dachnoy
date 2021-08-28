@@ -56,7 +56,7 @@ $.gulp.task('default', $.gulp.series('svg', 'svgCopy',
         'img',
         'pug',
         'libs',
-        'scripts',
+        // 'scripts',
         'scripts:common',
         'sass',
         'serv', 'watch'

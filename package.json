@@ -50,7 +50,7 @@
     "postcss-inline-svg": "^5.0.0",
     "postcss-nested": "^5.0.6",
     "postcss-preset-env": "^6.7.0",
-    "sass": "^1.38.1",
+    "sass": "^1.38.2",
     "webpack-stream": "^6.1.2",
     "wowjs": "^1.1.3"
   },

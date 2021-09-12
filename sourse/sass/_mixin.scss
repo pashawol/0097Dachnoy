@@ -224,3 +224,9 @@
 @mixin lh($a,$b) {
   line-height: math.div($a,$b);
 }
+
+
+@mixin mh($m: var(--bs-gutter-x)) {
+  min-height: calc(100% - #{$m});
+  margin-bottom: $m;
+}

@@ -1,16 +1,4 @@
-let div = document.createElement('div');
-
-div.style.overflowY = 'scroll';
-div.style.width = '50px';
-div.style.height = '50px';
-
-// мы должны вставить элемент в документ, иначе размеры будут равны 0
-document.body.append(div);
-
-let scrollWidth = div.offsetWidth - div.clientWidth;
-let root = document.documentElement;
-root.style.setProperty('--spacing-end', scrollWidth + 'px');
-div.remove();
+"use strict";
 const JSCCommon = {
 
 	btnToggleMenuMobile: [].slice.call(document.querySelectorAll(".toggle-menu-mobile--js")),
@@ -31,29 +19,13 @@ const JSCCommon = {
 			l10n: {
 				Escape: "Закрыть",
 				NEXT: "Вперед",
-				PREV: "Назад",
-				// PLAY_START: "Start slideshow",
-				// PLAY_STOP: "Pause slideshow",
-				// FULL_SCREEN: "Full screen",
-				// THUMBS: "Thumbnails",
-				// DOWNLOAD: "Download",
-				// SHARE: "Share",
-				// ZOOM: "Zoom"
-			},
-			// beforeLoad: function () {
-			// 	root.style.setProperty('--spacing-end', scrollWidth + 'px');
-			// },
-			// afterClose: function () {
-			// 	root.style.setProperty('--spacing-end', null);
-			// },
-
-		});
-
-		// $(link).fancybox({
-		// });
-
-		$(".modal-close-js").click(function () {
-			Fancybox.close();
+				PREV: "Назад", 
+			}, 
+		}); 
+		document.querySelectorAll(".modal-close-js").forEach(el=>{
+			el.addEventListener("click", ()=>{
+				Fancybox.close();
+			})
 		})
 		// fancybox.defaults.backFocus = false;
 		const linkModal = document.querySelectorAll(link);

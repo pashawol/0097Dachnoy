@@ -1,16 +1,9 @@
 module.exports = () => {
 	$.gulp.task('sass', () => {
-		var processors = [
-			// $.pcmq,
-			// $.postcssCustomProperties,
+		const processors = [ 
 			$.autoprefixer(),
 			$.nested(),
-			$.cssnano(),
-			// $.postcssInlineSvg(),
-			// $.postcssMerge(),
-			// $.cmq(),
-			// $.flexGapPolyfill(),
-			// $.postcssPresetEnv(),
+			$.cssnano()
 		];
 		return $.gulp.src($.sourse + '/sass/main.scss')
 			.pipe($.sassGlob())

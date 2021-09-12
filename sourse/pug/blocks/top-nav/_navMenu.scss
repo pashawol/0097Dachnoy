@@ -14,6 +14,6 @@
 	a{
 		display: block;
 		text-align: center;
-		padding: rem(20) rem(10);
+		padding: rem(20) calc(var(--bs-gutter-x) / 2);
 	}
 }

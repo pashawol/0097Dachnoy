@@ -36,7 +36,7 @@ module.exports = function () {
 				// $.sourse + '/pug/**/*.js',
 			])
 			// .pipe($.babel())
-			.pipe($.tabify(2, true))
+			// .pipe($.tabify(2, true))
 			.pipe($.gulp.dest($.public + '/js'))
 			.pipe($.browserSync.stream());
 	}

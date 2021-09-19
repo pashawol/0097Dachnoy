@@ -3,12 +3,13 @@ module.exports = () => {
 		const processors = [ 
 			$.autoprefixer(),
 			$.nested(),
-			$.cssnano()
+			$.cssnano(),
+			$.gcmq(),
 		];
 		return $.gulp.src($.sourse + '/sass/main.scss')
 			.pipe($.sassGlob())
 			.pipe($.sass().on('error', $.sass.logError))
-			.pipe($.gcmq())
+			// .pipe($.gcmq())
 			.pipe($.postcss(processors))
 			.pipe($.rename({ suffix: '.min', prefix: '' }))
 			.pipe($.gulp.dest($.public + '/css'))

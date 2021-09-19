@@ -14,25 +14,22 @@ global.$ = {
     newer: require('gulp-newer'),
     rename: require('gulp-rename'),
     gp: require('gulp-load-plugins'),
-    gulpAvif: require('gulp-avif'),
-    responsive: require('@tigersway/gulp-responsive'),
+    responsive: require('gulp-responsive'),
 
     gulpif: require('gulp-if'),
     sassGlob: require('gulp-sass-glob'),
     tabify: require('gulp-tabify'),
     envDev: false,
-    gcmq: require('gulp-group-css-media-queries'), 
+    gcmq: require('postcss-sort-media-queries'),
     gp: require('gulp-load-plugins')(),
     browserSync: require('browser-sync').create(),
     postcss: require('gulp-postcss'),
     autoprefixer: require('autoprefixer'),
     postcssPresetEnv: require('postcss-preset-env'),
-    cssnano: require('cssnano'),
-    postcssInlineSvg: require('postcss-inline-svg'),
+    cssnano: require('cssnano'), 
     nested: require('postcss-nested'),
-    plumber: require('gulp-plumber'),
-    webpack: require('webpack-stream'),
-    resizer: require('gulp-images-resizer'),
+    plumber: require('gulp-plumber'), 
+    // resizer: require('gulp-images-resizer'),
     path: {
         tasks: require('./gulp/config/tasks.js'),
     },
@@ -44,7 +41,9 @@ $.path.tasks.forEach(function (taskPath) {
 });
 
 
-$.gulp.task('img', $.gulp.series('cleanimg', 'img-responsive', 'img1x'));
+$.gulp.task('img', $.gulp.series('cleanimg', 'img-responsive', 
+// 'img1x'
+));
 $.gulp.task('libs', $.gulp.series('cleanlibs', 'copylibs'));
 
 $.gulp.task('default', $.gulp.series('svg', 'svgCopy',

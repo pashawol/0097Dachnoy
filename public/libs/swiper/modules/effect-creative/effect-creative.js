@@ -120,7 +120,8 @@ export default function EffectCreative({
     effectVirtualTransitionEnd({
       swiper,
       duration,
-      transformEl
+      transformEl,
+      allSlides: true
     });
   };
 

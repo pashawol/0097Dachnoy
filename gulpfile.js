@@ -28,7 +28,9 @@ global.$ = {
     postcssPresetEnv: require('postcss-preset-env'),
     cssnano: require('cssnano'), 
     nested: require('postcss-nested'),
-    plumber: require('gulp-plumber'), 
+    pscss: require('postcss-scss'),
+    syntax: require('postcss-syntax')({ scss: 'postcss-scss'}),
+    plumber: require('gulp-plumber'),
     // resizer: require('gulp-images-resizer'),
     path: {
         tasks: require('./gulp/config/tasks.js'),

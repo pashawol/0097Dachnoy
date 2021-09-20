@@ -1,6 +1,6 @@
 module.exports = () => {
 	$.gulp.task('sass', () => {
-		const processors = [ 
+		const processors = [  
 			$.autoprefixer(),
 			$.nested(),
 			$.cssnano(),
@@ -8,9 +8,9 @@ module.exports = () => {
 		];
 		return $.gulp.src($.sourse + '/sass/main.scss')
 			.pipe($.sassGlob())
-			.pipe($.sass().on('error', $.sass.logError))
+			.pipe($.sass({ outputStyle: 'compressed', indentedSyntax: false, errLogToConsole: true }))
+			.pipe($.postcss(processors, { syntax: $.syntax }))
 			// .pipe($.gcmq())
-			.pipe($.postcss(processors))
 			.pipe($.rename({ suffix: '.min', prefix: '' }))
 			.pipe($.gulp.dest($.public + '/css'))
 			.pipe($.browserSync.stream());

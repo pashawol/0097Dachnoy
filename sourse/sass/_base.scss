@@ -203,7 +203,7 @@ body {
 	&.l {
 		left: 0; 
 		svg {
-			@include transform(rotateY(180deg));
+			transform:  transform(rotateY(180deg));
 		}
 	} 
 	&.r {

@@ -230,3 +230,35 @@
   min-height: calc(100% - #{$m});
   margin-bottom: $m;
 }
+
+@mixin col-sw(){ 
+  @include make-col;
+  @include make-col-ready;
+  // padding: 0 calc(var(--bs-gutter-x)/2) !important;
+  // margin-top: var(--bs-gutter-y);
+  margin-right: 0 !important;
+}
+
+
+@mixin row-sw($x: $grid-gutter-width, $media: lg, $y:$x) {
+  @include media-breakpoint-up($media) {
+
+    @include make-row;
+    --bs-gutter-x: #{$x};
+    --bs-gutter-y: var(--bs-gutter-x, #{$y});
+    margin-top: calc(-1 * var(--bs-gutter-y)); 
+    transform: none!important;
+    width: calc(100% + var(--bs-gutter-x, 0px)) !important;
+    max-width: calc(100% + var(--bs-gutter-x, 0px)) !important;
+    height: auto;
+    & > .swiper-slide-duplicate{
+      display: none!important;
+    }
+    & > .swiper-slide{
+      @include col-sw(); 
+    }
+  }
+  & > .swiper-slide{
+    height: auto;
+  }
+}

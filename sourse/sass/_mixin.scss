@@ -245,7 +245,7 @@
 
     @include make-row;
     --bs-gutter-x: #{$x};
-    --bs-gutter-y: var(--bs-gutter-x, #{$y});
+    --bs-gutter-y: #{$y};
     margin-top: calc(-1 * var(--bs-gutter-y)); 
     transform: none!important;
     width: calc(100% + var(--bs-gutter-x, 0px)) !important;

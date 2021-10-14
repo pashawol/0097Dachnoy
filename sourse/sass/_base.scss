@@ -496,5 +496,5 @@ iframe {
 }
 
 .swiper-wrapper{
-	@include row-sw();
+	@include row-sw(10px, sm, 100px);
 }

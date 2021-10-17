@@ -1,3 +1,6 @@
+mixin menu-toggle()
+	+b.toggle-menu-mobile--js
+		span
 mixin mob-mnu()
 	-
 		//- let path = require('path');
@@ -8,7 +11,7 @@ mixin mob-mnu()
 		//- request.responseType = 'json';
 		//- let dataJson = JSON.parse(json);
 	//- h1= dataJson['lala'] 
-	+b.menu-mobile--js.d-lg-none
+	+b.menu-mobile--js
 		+b.toggle-menu-mobile--js
 			span
 		+e.inner
@@ -20,9 +23,10 @@ mixin top-nav()
 		.container
 			.row
 				.col-auto.d-lg-none
-					+b.toggle-menu-mobile--js
-						span
-				.col.d-none.d-lg-block
-					+mnu()
+					+menu-toggle()
+				.col
+					.menu-mobile.menu-mobile--js
+						+menu-toggle()
+						+mnu()
 					
 	// end top-nav

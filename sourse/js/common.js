@@ -27,7 +27,9 @@ const JSCCommon = {
 				Fancybox.close();
 			})
 		})
-		// fancybox.defaults.backFocus = false;
+		Fancybox.bind('[data-fancybox]', {
+			placeFocusBack: false,
+		});
 		const linkModal = document.querySelectorAll(link);
 		function addData() {
 			linkModal.forEach(element => {

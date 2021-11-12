@@ -1,0 +1,108 @@
+// start .sAbout
+.sAbout {
+	--sPT: #{rem(40)};
+	--sPB: #{rem(45)};
+	--sTPB: #{rem(30)};
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(114)};
+		--sPB: #{rem(90)};
+		--sTPB: #{rem(30)};
+	}
+	&__row{
+		--bs-gutter-x: #{rem(101)};
+		margin-bottom: rem(100);
+	}
+	&__col{
+		--l-col-w: 46%;
+		--r-col-w: calc(100% - var(--l-col-w));
+
+		display: flex;
+		flex-direction: column;
+		&--left{
+			@include media-breakpoint-up(xl){
+				width: var(--l-col-w)!important;
+			}
+		}
+		&--right{
+			@include media-breakpoint-up(xl){
+				width: var(--r-col-w)!important;
+			}
+		}
+	}
+	&__img{
+		@extend .accept-ratio-frame;
+		padding-top: calc(570/500 * 100%);
+		min-height: 100%;
+	}
+	&__sm{
+		font-weight: 600;
+		font-size: rem(14);
+		line-height: 1.2;
+		text-transform: uppercase;
+
+		&:after{
+			content: '';
+			display: block;
+			width: rem(50);
+			height: rem(3);
+			background-color: $primary;
+			margin: rem(22) 0 rem(16);
+		}
+	}
+	.section-title{
+
+		h2{
+			font-weight: 800;
+			font-size: rem(56);
+			line-height: 1.2;
+			margin-bottom: rem(30);
+		}
+		p{
+			font-weight: 500;
+			font-size: rem(22);
+			line-height: 1.5;
+		}
+	}
+	&__descr{
+		margin-bottom: rem(45);
+
+		& > *:last-child{
+			margin-bottom: 0;
+		}
+		p{
+			font-size: rem(15.7);
+			line-height: 1.75;
+
+			margin-bottom: rem(45);
+		}
+	}
+	&__btn{
+		@extend .btn;
+		@extend .btn-primary;
+		margin-top: auto;
+		align-self: flex-start;
+
+		padding: rem(25) rem(66);
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
+	&__bot-row{
+		--bs-gutter-x: #{rem(93)};
+	}
+	&__item{
+
+	}
+	&__i-row{
+
+	}
+	&__i-col{
+		&--number{
+
+		}
+		&--txt{}
+	}
+	&__{}
+	&__{}
+	&__{}
+} // end.sAbout

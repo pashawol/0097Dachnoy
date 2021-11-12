@@ -1,0 +1,32 @@
+mixin sAbout(data)
+	// start sAbout
+	+b.SECTION.sAbout.section#sAbout&attributes(attributes)
+		.container
+			+e.row.row
+				+e.col--left.col-lg-5
+					+pic('sAbout-img.jpg')(class="sAbout__img")
+				+e.col--right.col-lg-7
+					+e.sm О компании
+					+b.section-title
+						h2 Строительство деревянных домов
+						p Хотите построить или купить проект дома из&#160;бруса&#160;или каркаса?
+					+e.descr
+						p
+							| У&nbsp;нас можно заказать строительство брусовых или каркасных коттеджей, бань, по&nbsp;типовым либо индивидуальным проектам.
+							|
+							| В&nbsp;нашем каталоге есть много разных решений, которые помогут быстро сделать выбор. Наши дома во&nbsp;многом превосходят&nbsp;по эксплуатационным качествам здания из&nbsp;газобетона или кирпича.
+					+e.btn(href="#") Подробее о нас
+			+e.bot-row.row
+				.col-3
+					+sAboutItem('5', 'лет надежной гарантии')
+				.col-3
+					+sAboutItem('8', 'лет опыта в строительстве')
+				.col-6
+					+sAboutItem('1100', 'Домов построено по всей России')
+	// end sAbout
+
+mixin sAboutItem(number, txt)
+	+e.item
+		+e.i-row.row
+			+e.i-col--number.col-auto=number
+			+e.i-col--txt.col-auto=txt

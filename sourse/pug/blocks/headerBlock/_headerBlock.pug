@@ -1,10 +1,57 @@
 mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
+		+pic('headerBlock-img.jpg')(class="headerBlock__bg")
+		+e.container.container-lg
+			+b.section-title
+				h1 Загородные дома под&#160;ключ
+				p В САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ
+			+e.btn(href="#") Рассчитать проект
+			+e.know.d-none.d-md-block(href="#")
+				+e.k-txt Узнайте о компании за 2 минуты
+				+e.play-img
+					img(loading="lazy" src="img/svg/play-lined.svg" alt="")
+	+b.plates
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+			+e.row.row
+				+headerBlockItem({
+					imgNum: 1,
+					title: 'Проекты каркасных домов',
+					projects: 'Проектов: 102',
+				})
+				+headerBlockItem({
+					imgNum: 2,
+					title: 'Проекты домов из бруса',
+					projects: 'Проектов: 80',
+				})
+				+headerBlockItem({
+					imgNum: 3,
+					title: 'Проекты бань из бруса',
+					projects: 'Проектов: 21',
+				})
+				+headerBlockItem({
+					imgNum: 4,
+					title: 'Проекты дачных домов',
+					projects: 'Проектов: 8',
+				})
 	// end headerBlock
+
+mixin headerBlockItem(data)
+	.col-sm-6.col-lg-3
+		+e.item
+			+pic(`headerBlock-${data.imgNum}.jpg`)(class="plates__ball")
+			+e.box
+				+e.title=data.title
+				+e.projects=data.projects
+				+e.foot-row.row.justify-content-center.align-items-center.gy-2
+					+headerBlockIconed('ruble', 'от 1,2 млн. руб.')
+					+headerBlockIconed('calendar', 'от 30 дней')
+
+mixin headerBlockIconed(imgName, title)
+	.col-auto
+		+e.iconed-row.row.align-items-center
+			.col-auto
+				+e.icon
+					img(loading="lazy" src=`img/svg/${imgName}.svg` alt="")
+			.col
+				+e.i-txt=title

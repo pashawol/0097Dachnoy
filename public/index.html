@@ -8,67 +8,463 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no">
 		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
 		<link href="libs/swiper/swiper.min.css" rel="stylesheet"/>
-		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
-	<body class="main-page">
+	<body class="main-page" data-bg="01.png">
 		<div class="main-wrapper">
+			<div class="menu-mobile menu-mobile--js d-lg-none">
+				<div class="menu-mobile__inner sb-dd-menu-js">
+					<!-- picture-->
+					<picture class="menu-mobile__bg"> 
+						<source type="image/webp" srcset="img/@2x/webp/headerBlock-img.webp" media="(min-width:576px)"/>
+						<source type="image/webp" srcset="img/@1x/webp/headerBlock-img.webp"/>
+						<source type="image/jpg" srcset="img/@2x/headerBlock-img.jpg" media="(min-width:576px)"/>
+						<source type="image/jpg" srcset="img/@1x/headerBlock-img.jpg"/><img src="img/@2x/headerBlock-img.jpg" alt="" loading="lazy"/>
+					</picture>
+					<!-- /picture-->
+					<div class="menu-mobile__page-menu">
+						<ul class="menu">
+							<li class="menu-item menu-item-has-children"><a href="#">О компании</a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="#">Услуги</a></li>
+									<li class="menu-item"><a href="#">Вакансии</a></li>
+									<li class="menu-item"><a href="#">Проекты домов</a></li>
+									<li class="menu-item"><a href="#">Отзывы</a></li>
+									<li class="menu-item"><a href="#">Вопросы</a></li>
+									<li class="menu-item"><a href="#">Акции</a></li>
+									<li class="menu-item"><a href="#">Наше производство</a></li>
+								</ul>
+							</li>
+							<li class="menu-item"><a href="#">Портфолио</a></li>
+							<li class="menu-item menu-item-has-children"><a href="#">Клиентам</a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="#">Услуги</a></li>
+									<li class="menu-item"><a href="#">Вакансии</a></li>
+									<li class="menu-item"><a href="#">Проекты домов</a></li>
+									<li class="menu-item"><a href="#">Отзывы</a></li>
+									<li class="menu-item"><a href="#">Вопросы</a></li>
+									<li class="menu-item"><a href="#">Акции</a></li>
+									<li class="menu-item"><a href="#">Наше производство</a></li>
+								</ul>
+							</li>
+							<li class="menu-item"><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="menu-mobile__menu">
+						<ul>
+							<li><a href="#">Каркасные дома</a></li>
+							<li><a href="#">Дома из бруса</a></li>
+							<li><a href="#">Бани из бруса</a></li>
+							<li><a href="#">Дачные дома</a></li>
+						</ul>
+					</div>
+					<div class="text-center">
+						<a class="menu-mobile__mail" href="mailto:info@dachniy-rai.ru">info@dachniy-rai.ru
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--  мобильное меню-->
 			<!-- start header-->
-			<header class="header" id="header">
+			<header class="header header--js" id="header">
+				<!-- start top-nav-->
+				<div class="top-nav block-with-lazy">
+					<div class="top-nav__container container-lg">
+						<div class="top-nav__row row align-items-center">
+							<div class="col d-none d-lg-block">
+								<ul class="menu">
+									<li class="menu-item menu-item-has-children"><a href="#">О компании</a>
+										<ul class="sub-menu">
+											<li class="menu-item"><a href="#">Услуги</a></li>
+											<li class="menu-item"><a href="#">Вакансии</a></li>
+											<li class="menu-item"><a href="#">Проекты домов</a></li>
+											<li class="menu-item"><a href="#">Отзывы</a></li>
+											<li class="menu-item"><a href="#">Вопросы</a></li>
+											<li class="menu-item"><a href="#">Акции</a></li>
+											<li class="menu-item"><a href="#">Наше производство</a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="#">Портфолио</a></li>
+									<li class="menu-item menu-item-has-children"><a href="#">Клиентам</a>
+										<ul class="sub-menu">
+											<li class="menu-item"><a href="#">Услуги</a></li>
+											<li class="menu-item"><a href="#">Вакансии</a></li>
+											<li class="menu-item"><a href="#">Проекты домов</a></li>
+											<li class="menu-item"><a href="#">Отзывы</a></li>
+											<li class="menu-item"><a href="#">Вопросы</a></li>
+											<li class="menu-item"><a href="#">Акции</a></li>
+											<li class="menu-item"><a href="#">Наше производство</a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="col-auto d-none d-md-block">
+								<div class="top-nav__item">
+									<div class="top-nav__title">Электронная почта
+									</div>
+									<a class="top-nav__link" href="mailto:info@dachniy-rai.ru">info@dachniy-rai.ru
+									</a>
+								</div>
+							</div>
+							<div class="col-auto">
+								<div class="top-nav__item">
+									<div class="top-nav__title">Санкт-Петербург
+									</div>
+									<a class="top-nav__link" href="tel:+78129429469">+7 (812) 942-94-69
+									</a>
+								</div>
+							</div>
+							<div class="col-auto d-none d-sm-block">
+								<div class="top-nav__item pe-0">
+									<div class="top-nav__title">Москва
+									</div>
+									<a class="top-nav__link" href="tel:+79299727564">+7 (929) 972-75-64
+									</a>
+								</div>
+							</div>
+							<div class="col-auto">
+								<div class="top-nav__wa"><img loading="lazy" src="img/svg/watsapp.svg" alt=""/>
+								</div>
+							</div>
+							<div class="col-auto ms-auto">
+								<a class="top-nav__btn link-modal-js" href="#modal-call">Заказать звонок
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end top-nav-->
 			</header>
 			<!-- end header-->
-			<!-- start top-nav-->
-			<div class="top-nav block-with-lazy">
-				<div class="container">
-					<div class="row">
+			<!-- start topLine-->
+			<div class="topLine" id="topLine">
+				<div class="topLine__container container-lg">
+					<div class="topLine__row row align-items-center">
 						<div class="col-auto d-lg-none">
 							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 							</div>
 						</div>
 						<div class="col">
-							<div class="menu-mobile menu-mobile--js">
-								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-								</div>
-								<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
+							<a class="topLine__logo" href="#"><img loading="lazy" src="img/@2x/logo.png" alt=""/>
+							</a>
+						</div>
+						<div class="col-auto d-none d-lg-block">
+							<div class="topLine__menu">
+								<ul>
+									<li><a href="#">Каркасные дома</a></li>
+									<li><a href="#">Дома из бруса</a></li>
+									<li><a href="#">Бани из бруса</a></li>
+									<li><a href="#">Дачные дома</a></li>
 								</ul>
+							</div>
+						</div>
+						<div class="topLine__s-col col-auto align-self-xl-start s-col-js">
+							<div class="topLine__search">
+								<div class="topLine__input-wrap form-group"><input class="topLine__input form-control" name="text" type="text" placeholder="Найти"/>
+								</div>
+								<!-- +e.input-wrap-->
+								<button class="topLine__btn" type="button">
+									<svg class="icon icon-zoom ">
+										<use xlink:href="img/svg/sprite.svg#zoom"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="topLine__close-btn d-sm-none toggle-search-js">
+								<svg class="icon icon-cross ">
+									<use xlink:href="img/svg/sprite.svg#cross"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="col-auto d-sm-none">
+							<div class="topLine__zoom-btn toggle-search-js">
+								<svg class="icon icon-zoom ">
+									<use xlink:href="img/svg/sprite.svg#zoom"></use>
+								</svg>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- end top-nav-->
-			<!-- start topLine-->
-			<section class="topLine section" id="topLine">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>topLine</h2>
-					</div>
-					<div class="row"></div>
-				</div>
-			</section>
 			<!-- end topLine-->
-			<div class="container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">1</div>
-					<div class="swiper-slide">2</div>
-					<div class="swiper-slide">3</div>
-				</div>
-			</div>
 			<!-- start headerBlock-->
 			<div class="headerBlock section" id="headerBlock">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>headerBlock ds dfsdfdsfsd</h2>
+				<!-- picture-->
+				<picture class="headerBlock__bg"> 
+					<source type="image/webp" srcset="img/@2x/webp/headerBlock-img.webp" media="(min-width:576px)"/>
+					<source type="image/webp" srcset="img/@1x/webp/headerBlock-img.webp"/>
+					<source type="image/jpg" srcset="img/@2x/headerBlock-img.jpg" media="(min-width:576px)"/>
+					<source type="image/jpg" srcset="img/@1x/headerBlock-img.jpg"/><img src="img/@2x/headerBlock-img.jpg" alt="" loading="lazy"/>
+				</picture>
+				<!-- /picture-->
+				<div class="headerBlock__container container-lg">
+					<div class="section-title">
+						<h1>Загородные дома под&#160;ключ</h1>
+						<p>В САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ</p>
 					</div>
-					<div class="row"></div>
+					<a class="headerBlock__btn" href="#">Рассчитать проект
+					</a>
+					<a class="headerBlock__know d-none d-md-block" href="#">
+						<div class="headerBlock__k-txt">Узнайте о компании за 2 минуты
+						</div>
+						<div class="headerBlock__play-img"><img loading="lazy" src="img/svg/play-lined.svg" alt=""/>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="plates">
+				<div class="container">
+					<div class="plates__row row">
+						<div class="col-sm-6 col-lg-3">
+							<div class="plates__item">
+								<!-- picture-->
+								<picture class="plates__ball"> 
+									<source type="image/webp" srcset="img/@2x/webp/headerBlock-1.webp" media="(min-width:576px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/headerBlock-1.webp"/>
+									<source type="image/jpg" srcset="img/@2x/headerBlock-1.jpg" media="(min-width:576px)"/>
+									<source type="image/jpg" srcset="img/@1x/headerBlock-1.jpg"/><img src="img/@2x/headerBlock-1.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="plates__box">
+									<div class="plates__title">Проекты каркасных домов
+									</div>
+									<div class="plates__projects">Проектов: 102
+									</div>
+									<div class="plates__foot-row row justify-content-center align-items-center gy-2">
+										<div class="col-auto">
+											<div class="plates__iconed-row row align-items-center">
+												<div class="col-auto">
+													<div class="plates__icon"><img loading="lazy" src="img/svg/ruble.svg" alt=""/>
+													</div>
+												</div>
+												<div class="col">
+													<div class="plates__i-txt">от 1,2 млн. руб.
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-auto">
+											<div class="plates__iconed-row row align-items-center">
+												<div class="col-auto">
+													<div class="plates__icon"><img loading="lazy" src="img/svg/calendar.svg" alt=""/>
+													</div>
+												</div>
+												<div class="col">
+													<div class="plates__i-txt">от 30 дней
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="plates__item">
+								<!-- picture-->
+								<picture class="plates__ball"> 
+									<source type="image/webp" srcset="img/@2x/webp/headerBlock-2.webp" media="(min-width:576px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/headerBlock-2.webp"/>
+									<source type="image/jpg" srcset="img/@2x/headerBlock-2.jpg" media="(min-width:576px)"/>
+									<source type="image/jpg" srcset="img/@1x/headerBlock-2.jpg"/><img src="img/@2x/headerBlock-2.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="plates__box">
+									<div class="plates__title">Проекты домов из бруса
+									</div>
+									<div class="plates__projects">Проектов: 80
+									</div>
+									<div class="plates__foot-row row justify-content-center align-items-center gy-2">
+										<div class="col-auto">
+											<div class="plates__iconed-row row align-items-center">
+												<div class="col-auto">
+													<div class="plates__icon"><img loading="lazy" src="img/svg/ruble.svg" alt=""/>
+													</div>
+												</div>
+												<div class="col">
+													<div class="plates__i-txt">от 1,2 млн. руб.
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-auto">
+											<div class="plates__iconed-row row align-items-center">
+												<div class="col-auto">
+													<div class="plates__icon"><img loading="lazy" src="img/svg/calendar.svg" alt=""/>
+													</div>
+												</div>
+												<div class="col">
+													<div class="plates__i-txt">от 30 дней
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="plates__item">
+								<!-- picture-->
+								<picture class="plates__ball"> 
+									<source type="image/webp" srcset="img/@2x/webp/headerBlock-3.webp" media="(min-width:576px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/headerBlock-3.webp"/>
+									<source type="image/jpg" srcset="img/@2x/headerBlock-3.jpg" media="(min-width:576px)"/>
+									<source type="image/jpg" srcset="img/@1x/headerBlock-3.jpg"/><img src="img/@2x/headerBlock-3.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="plates__box">
+									<div class="plates__title">Проекты бань из бруса
+									</div>
+									<div class="plates__projects">Проектов: 21
+									</div>
+									<div class="plates__foot-row row justify-content-center align-items-center gy-2">
+										<div class="col-auto">
+											<div class="plates__iconed-row row align-items-center">
+												<div class="col-auto">
+													<div class="plates__icon"><img loading="lazy" src="img/svg/ruble.svg" alt=""/>
+													</div>
+												</div>
+												<div class="col">
+													<div class="plates__i-txt">от 1,2 млн. руб.
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-auto">
+											<div class="plates__iconed-row row align-items-center">
+												<div class="col-auto">
+													<div class="plates__icon"><img loading="lazy" src="img/svg/calendar.svg" alt=""/>
+													</div>
+												</div>
+												<div class="col">
+													<div class="plates__i-txt">от 30 дней
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="plates__item">
+								<!-- picture-->
+								<picture class="plates__ball"> 
+									<source type="image/webp" srcset="img/@2x/webp/headerBlock-4.webp" media="(min-width:576px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/headerBlock-4.webp"/>
+									<source type="image/jpg" srcset="img/@2x/headerBlock-4.jpg" media="(min-width:576px)"/>
+									<source type="image/jpg" srcset="img/@1x/headerBlock-4.jpg"/><img src="img/@2x/headerBlock-4.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="plates__box">
+									<div class="plates__title">Проекты дачных домов
+									</div>
+									<div class="plates__projects">Проектов: 8
+									</div>
+									<div class="plates__foot-row row justify-content-center align-items-center gy-2">
+										<div class="col-auto">
+											<div class="plates__iconed-row row align-items-center">
+												<div class="col-auto">
+													<div class="plates__icon"><img loading="lazy" src="img/svg/ruble.svg" alt=""/>
+													</div>
+												</div>
+												<div class="col">
+													<div class="plates__i-txt">от 1,2 млн. руб.
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-auto">
+											<div class="plates__iconed-row row align-items-center">
+												<div class="col-auto">
+													<div class="plates__icon"><img loading="lazy" src="img/svg/calendar.svg" alt=""/>
+													</div>
+												</div>
+												<div class="col">
+													<div class="plates__i-txt">от 30 дней
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- end headerBlock-->
+			<!-- start sAbout-->
+			<section class="sAbout section" id="sAbout">
+				<div class="container">
+					<div class="sAbout__row row">
+						<div class="sAbout__col sAbout__col--left col-lg-5">
+							<!-- picture-->
+							<picture class="sAbout__img"> 
+								<source type="image/webp" srcset="img/@2x/webp/sAbout-img.webp" media="(min-width:576px)"/>
+								<source type="image/webp" srcset="img/@1x/webp/sAbout-img.webp"/>
+								<source type="image/jpg" srcset="img/@2x/sAbout-img.jpg" media="(min-width:576px)"/>
+								<source type="image/jpg" srcset="img/@1x/sAbout-img.jpg"/><img src="img/@2x/sAbout-img.jpg" alt="" loading="lazy"/>
+							</picture>
+							<!-- /picture-->
+						</div>
+						<div class="sAbout__col sAbout__col--right col-lg-7">
+							<div class="sAbout__sm">О компании
+							</div>
+							<div class="section-title">
+								<h2>Строительство деревянных домов</h2>
+								<p>Хотите построить или купить проект дома из&#160;бруса&#160;или каркаса?</p>
+							</div>
+							<div class="sAbout__descr">
+								<p>
+									У&nbsp;нас можно заказать строительство брусовых или каркасных коттеджей, бань, по&nbsp;типовым либо индивидуальным проектам.
+									
+									В&nbsp;нашем каталоге есть много разных решений, которые помогут быстро сделать выбор. Наши дома во&nbsp;многом превосходят&nbsp;по эксплуатационным качествам здания из&nbsp;газобетона или кирпича.
+								</p>
+							</div>
+							<a class="sAbout__btn" href="#">Подробее о нас
+							</a>
+						</div>
+					</div>
+					<div class="sAbout__bot-row row">
+						<div class="col-3">
+							<div class="sAbout__item">
+								<div class="sAbout__i-row row">
+									<div class="sAbout__i-col sAbout__i-col--number col-auto">5
+									</div>
+									<div class="sAbout__i-col sAbout__i-col--txt col-auto">лет надежной гарантии
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="sAbout__item">
+								<div class="sAbout__i-row row">
+									<div class="sAbout__i-col sAbout__i-col--number col-auto">8
+									</div>
+									<div class="sAbout__i-col sAbout__i-col--txt col-auto">лет опыта в строительстве
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="sAbout__item">
+								<div class="sAbout__i-row row">
+									<div class="sAbout__i-col sAbout__i-col--number col-auto">1100
+									</div>
+									<div class="sAbout__i-col sAbout__i-col--txt col-auto">Домов построено по всей России
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sAbout-->
 			<!-- start sForm-->
 			<section class="sForm section" id="sForm">
 				<div class="container">

@@ -3,23 +3,45 @@ mixin menu-toggle()
 		span
 
 mixin mob-mnu()
-	+b.menu-mobile--js
-		+b.toggle-menu-mobile--js
+	+b.menu-mobile--js.d-lg-none
+		//-+b.toggle-menu-mobile--js
 			span
-		+e.inner
-			+mnu()
+		+e.inner.sb-dd-menu-js
+			+pic('headerBlock-img.jpg')(class="menu-mobile__bg")
+			+e.page-menu
+				+mnu()
+			+e.menu
+				ul
+					li: a(href='#') Каркасные дома
+					li: a(href='#') Дома из бруса
+					li: a(href='#') Бани из бруса
+					li: a(href='#') Дачные дома
+			.text-center
+				+e.mail(href="mailto:info@dachniy-rai.ru") info@dachniy-rai.ru
 	//  мобильное меню
 
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
-		.container
-			.row
-				.col-auto.d-lg-none
+		+e.container.container-lg
+			+e.row.row.align-items-center
+				.col.d-none.d-lg-block
+					+mnu()
+				+topNavItem('Электронная почта', 'mailto:info@dachniy-rai.ru', 'info@dachniy-rai.ru')(class="d-none d-md-block")
+				+topNavItem('Санкт-Петербург', 'tel:+78129429469', '+7 (812) 942-94-69')(class="")
+				+topNavItem('Москва', 'tel:+79299727564', '+7 (929) 972-75-64', 'pe-0')(class="d-none d-sm-block")
+				.col-auto
+					+e.wa
+						img(loading="lazy" src="img/svg/watsapp.svg" alt="")
+				.col-auto.ms-auto
+					+e.btn.link-modal-js(href='#modal-call') Заказать звонок
+				//-.menu-mobile.menu-mobile--js
 					+menu-toggle()
-				.col
-					.menu-mobile.menu-mobile--js
-						+menu-toggle()
-						+mnu()
-					
+					+mnu()
 	// end top-nav
+
+mixin topNavItem(title, href, linkTxt, addClasses='')
+	.col-auto&attributes(attributes)
+		+e.item(class=addClasses)
+			+e.title=title
+			+e.link(href=href)=linkTxt

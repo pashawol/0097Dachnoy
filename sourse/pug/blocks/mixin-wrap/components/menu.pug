@@ -1,20 +1,19 @@
 -
 	var nav= { 
 		"Наши работы":"#",
-		"Цены":"#",
-		"Калькулятор":"#",
-		"Акции":"#" ,
-		"Заказать":"#",
 		}
 -
-	//- var subnav= { 
-	//- 	"Строительство загородных домов":"#",
-	//- 	"Отделка загородных домов":"#",
-	//- 	"Покраска деревянных домов":"#",
-	//- 	"Штукатурные фасады загородных домов":"#" ,
-	//- 	}
+	var subnav= {
+		"Услуги":"#",
+		"Вакансии":"#",
+		"Проекты домов":"#",
+		"Отзывы":"#",
+		"Вопросы":"#",
+		"Акции":"#",
+		"Наше производство":"#",
+	}
 //- WP menu
-mixin mnu()
+mixin mnuDef()
 	ul.menu(itemscope itemtype="http://schema.org/SiteNavigationElement")
 		each linkPatch, linkName in nav
 			li.menu-item(itemprop="item" ): a(href= linkPatch itemprop="url")= linkName
@@ -26,3 +25,17 @@ mixin mnu()
 						li.menu-item(itemprop="item" ): a(href= sublinkPatch itemprop="url")= sublinkName
 
 //- menu
+mixin mnu()
+	ul.menu
+		li.menu-item.menu-item-has-children
+			a(href="#") О компании
+			ul.sub-menu
+				each sublinkPatch, sublinkName in subnav
+					li.menu-item: a(href=sublinkPatch)= sublinkName
+		li.menu-item: a(href='#') Портфолио
+		li.menu-item.menu-item-has-children
+			a(href="#") Клиентам
+			ul.sub-menu
+				each sublinkPatch, sublinkName in subnav
+					li.menu-item: a(href=sublinkPatch)= sublinkName
+		li.menu-item: a(href='#') Контакты

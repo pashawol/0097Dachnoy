@@ -1,6 +1,12 @@
 :root {
   --animate-delay: 1.2s;
 
+  --plates-shift: #{rem(156)};
+  @include media-breakpoint-up(sm){
+    --plates-shift: #{rem(160)};
+  }
+
+
 	--sPT: #{rem(40)};
 	--sPB: #{rem(45)};
 	--sTPB: #{rem(30)};
@@ -10,12 +16,20 @@
     --sTPB: #{rem(40)};
   }
 
-
-  --bs-body-font-size: 14px;
-  @include media-breakpoint-up(md){
-    --bs-body-font-size: 15px;
+  --bs-body-font-size: 13px;
+  @media (min-width: 360px) {
+    --bs-body-font-size: 14px;
+  }
+  @media (min-width: 380px) {
+    --bs-body-font-size: #{$em-base};
+  }
+  @include media-breakpoint-up(lg){
+    --bs-body-font-size: 13px;
   }
   @include media-breakpoint-up(xl){
+    --bs-body-font-size: 14.5px;
+  }
+  @include media-breakpoint-up(xxl){
     --bs-body-font-size: #{$em-base};
   }
 

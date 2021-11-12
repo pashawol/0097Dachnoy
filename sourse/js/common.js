@@ -223,7 +223,7 @@ const JSCCommon = {
 		for (let parent of parents) {
 			if (parent) {
 				// childHeads, kind of funny))
-				let ChildHeads = parent.querySelectorAll('.dd-head-js:not(.disabled)');
+				let ChildHeads = parent.querySelectorAll('.dd-head-js:not(.disabled), .menu-item-has-children');
 				$(ChildHeads).click(function () {
 					let clickedHead = this;
 
@@ -320,6 +320,30 @@ function eventHandler() {
 		...defaultSl,
 		...freeMomentum,
 	});
+
+	//
+	// $('.free-dd-head-js, .sb-dd-menu-js li.menu-item-has-children > a').click(function () {
+	// 	event.preventDefault();
+	// 	let content = this.parentElement.querySelector('.free-dd-content-js') || this.nextElementSibling;
+	// 	$(this.parentElement).toggleClass('active');
+	// 	$(content).slideToggle(function () {
+	// 		$(this).toggleClass('active');
+	// 	});
+	// });
+	$('.free-dd-head-js, .sb-dd-menu-js li.menu-item-has-children').click(function () {
+		event.preventDefault();
+		let content = this.parentElement.querySelector('.free-dd-content-js') || this.querySelector('.sub-menu');
+		$(this.parentElement).toggleClass('active');
+		$(content).slideToggle(function () {
+			$(this).toggleClass('active');
+		});
+	});
+	// .close-search-js
+	//
+	$('.toggle-search-js').click(function (){
+		$('.s-col-js').toggleClass('active');
+	})
+
 	// modal window
 
 };

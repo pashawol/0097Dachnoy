@@ -2,8 +2,42 @@ mixin sLast(data)
 	// start sLast
 	+b.SECTION.sLast.section#sLast&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sLast
-				
-			.row
+			+b.sm-yellow--title Портфолио
+			+b.section-title
+				+e.row.row
+					.col-lg
+						h2 Последние проекты
+					.col-lg-auto.d-none.d-sm-block
+						p Ознакомьтесь с последними реализованными нашей компанией проектами.
+			+e.slider-wrap
+				.swiper.sLast-slider-js
+					.swiper-wrapper
+						+sLastSlide(1)
+						+sLastSlide(2)
+						+sLastSlide(3)
+						+sLastSlide(4)
+					.swiper-pagination.d-lg-none
+			.text-center
+				+e.btn(href="#") Смотреть портфолио
 	// end sLast
+
+mixin sLastSlide(imgNum)
+	.swiper-slide
+		+e.item
+			+pic(`sLast-${imgNum}.jpg`)(class="sLast__img")
+			+e.foot
+				+e.f-row.row.align-items-center
+					.col-6.col-md-4
+						+sCardsChar(1, 'Площадь:', '91 м2')
+					.col-6.col-md-4.d-none.d-md-block
+						+sCardsChar(2, 'Этажность:', '3')
+					.col-6.col-md-4
+						+e.price от 1 669 000 руб.
+					.col-6.col-md-4.d-none.d-md-block
+						+sCardsChar(3, 'Размер:', '6 х 8 м')
+					.col-6.col-md-4
+						+sCardsChar(4, 'Срок:', '30 дней')
+					.col-6.col-md-4
+						+e.link(href="#" target="_blank")
+							span Перейти в проект
+							+icon('arrow-right')

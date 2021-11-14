@@ -359,6 +359,33 @@ function eventHandler() {
 			prevEl: '.swiper-button-prev',
 		},
 	});
+	//
+	let sLastSlider = new Swiper('.sLast-slider-js', {
+		loop: true,
+		slidesPerView: "auto",
+		spaceBetween: 50,
+		watchOverflow: true,
+
+		//loop: true,
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+	//
+	let sTalkSlider = new Swiper('.sTalk-slider-js', {
+		loop: true,
+		slidesPerView: "auto",
+		spaceBetween: 50,
+
+		//loop: true,
+		pagination: {
+			el: '.sTalk--js .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
 
 	// modal window
 };

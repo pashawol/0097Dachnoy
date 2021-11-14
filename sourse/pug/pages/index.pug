@@ -8,6 +8,7 @@ include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/sCards/_sCards.pug
 include ../blocks/sWork/_sWork.pug
 include ../blocks/sLast/_sLast.pug
+include ../blocks/sTalk/_sTalk.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -21,18 +22,13 @@ block pagecontent
 	+header()
 		+top-nav()
 	+topLine()
-	//-.container
-		.swiper-wrapper
-			.swiper-slide 1
-			.swiper-slide 2
-			.swiper-slide 3
 	+headerBlock()
 	+sAbout()
 	+sCatalog()
 	+sCards()
 	+sWork()
-	+sLast()
-
 	+sForm()
+	+sLast()
+	+sTalk()
 	+sContact()
-	+footer()
+	//-+footer()

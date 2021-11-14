@@ -9,7 +9,7 @@
 	height: 100%;
 	background-position: center 0;
 	opacity: 0;
-	//opacity: 0.7;
+	opacity: 0.7;
 } 
 
 body,
@@ -348,20 +348,39 @@ ul {
 	text-align: center;
 
 	&-bullet {
+		@include mt();
 		opacity: 1;
-		width: 8px;
-		height: 8px;
+		width: rem(18);
+		height: rem(18);
 		border-radius: 50%;
-		background-color: #E6E6E6;
+		background-color: transparent;
 		outline: none !important;
-		@include mt;
-		margin-left: rem(4);
-		padding-right: rem(4);
-		display: inline-block;
+		margin-left: rem(15);
+		margin-right: rem(15);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 
+		position: relative;
+		&:after{
+			@include mt();
+			content: '';
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: $black;
+		}
+
+
+		border: 1px solid transparent;
 		&-active,
 		&:hover {
-			background-color: var(--bs-primary) ;
+			border: 1px solid $body-color;
+			&:after{
+				background-color: $primary;
+			}
+
 		}
 	}
 }

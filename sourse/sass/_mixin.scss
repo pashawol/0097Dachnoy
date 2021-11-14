@@ -240,25 +240,25 @@
 }
 
 
-@mixin row-sw($x: $grid-gutter-width, $media: lg, $y:$x) {
-  @include media-breakpoint-up($media) {
+@mixin sw-col(){
+  height: auto;
+  padding: 0 calc(var(--bs-gutter-x)/2) !important;
+  margin: calc(var(--bs-gutter-y, 0px)) 0 0 0!important;
+}
+@mixin sw-row() {
+  margin-top: calc(var(--bs-gutter-y, 0px)*-1);
+  margin-left: calc(var(--bs-gutter-x, #{$grid-gutter-width})/-2);
+  margin-right: calc(var(--bs-gutter-x, #{$grid-gutter-width})/-2);
+  flex-wrap: wrap!important;
+  transform: none!important;
+  width: calc(100% + var(--bs-gutter-x, #{$grid-gutter-width})) !important;
+  max-width: calc(100% + var(--bs-gutter-x, #{$grid-gutter-width})) !important;
 
-    @include make-row;
-    --bs-gutter-x: #{$x};
-    --bs-gutter-y: #{$y};
-    margin-top: calc(-1 * var(--bs-gutter-y)); 
-    transform: none!important;
-    width: calc(100% + var(--bs-gutter-x, 0px)) !important;
-    max-width: calc(100% + var(--bs-gutter-x, 0px)) !important;
-    height: auto;
-    & > .swiper-slide-duplicate{
-      display: none!important;
-    }
-    & > .swiper-slide{
-      @include col-sw(); 
-    }
+  .swiper-slide-duplicate{
+    display: none!important;
   }
-  & > .swiper-slide{
-    height: auto;
+
+  & > *{
+    @include sw-col();
   }
 }

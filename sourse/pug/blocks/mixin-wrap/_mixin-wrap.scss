@@ -1,25 +1,36 @@
  
 	  
 .soc{
-	@include roww(10px, m);
 	display: flex;
-	&__item{
-		text-decoration: none !important; 
-		vertical-align: middle;
-		@include mt;
-		display: grid;
-		place-items: center;
-		&:hover{
-		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
-			// opacity: .6 ;
-		}
-		
-	}
-	.icon{
-		font-size: rem(30);
-	}
-	 
+	align-items: center;
 
+	&__item{
+		width: rem(50);
+		height: rem(50);
+		margin-right: rem(10);
+		&:last-child{
+			margin-right: 0;
+		}
+		border-radius: 50%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.icon{
+			color: $gray-680;
+			font-size: rem(20);
+		}
+
+		color: $gray-680;
+		border: 1px solid $gray-680;
+		&:hover{
+			background-color: $gray-680;
+			.icon{
+				color: $white;
+			}
+		}
+	}
 }
  
 

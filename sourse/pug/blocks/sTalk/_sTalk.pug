@@ -1,0 +1,61 @@
+mixin sTalk(data)
+	// start sTalk
+	+b.SECTION.sTalk--js.section#sTalk&attributes(attributes)
+		.container
+			+b.sm-yellow--title Отзывы клиентов
+			+b.section-title
+				+e.row.row
+					.col-lg
+						h2 О нас говорят
+					.col-lg-auto.d-none.d-lg-block
+						+e.sub-row.row.align-items-center
+							.col-auto
+								.swiper-pagination
+							.col-auto
+								+b.all-feedbacks(href="#") Все отзывы
+			+e.slider-wrap
+				.swiper.sTalk-slider-js
+					.swiper-wrapper
+						+sTalkSlide()
+						+sTalkSlide(2)
+						+sTalkSlide(3)
+						+sTalkSlide(4)
+						+sTalkSlide(5)
+					.text-center.d-lg-none
+						+e.btn--out-primary(href="#") Задать вопрос
+						.swiper-pagination.d-lg-none
+						+b.all-feedbacks(href="#") Все отзывы
+	// end sTalk
+
+mixin sTalkSlide(mod='')
+	.swiper-slide
+		+e.row.row
+			+e.col--left.col-lg-auto.d-none.d-lg-block
+				+e.img-box
+					+pic('sTalk-1.jpg')(class="sTalk__img")
+					+e.btn--primary(href="#") Хочу на экскурсию
+				.text-center
+					+e.btn--out-primary(href="#") Задать вопрос
+			+e.col--right.col-lg
+				+e.title-row.row.align-items-center
+					.col-lg
+						+e.sl-title Индивидуальный каркасный дом с мансардой
+					+e.date.col-lg-auto 22.09.2021
+				+e.img-box.d-lg-none
+					+pic('sTalk-1.jpg')(class="sTalk__img")
+					+e.btn--primary(href="#") Хочу на экскурсию
+				+e.content
+					p: b Оценка качества строения
+					p Строительство произведено качественно, все работы выполнены отлично в соответствии с условиями договора.
+					p: b Оценка работы бригады на объекте
+					p Бригада работала замечательно. Все работы выполнены в срок с отличным качеством. В ходе строительства были получены рекомендации по уходу и эксплуатации строения. отличаем профессиональное отношение к работе и заказчику. Буду рекомендовать Вашу фирму своим знакомым, и в будущем при необходимости строительства обратимся к Вам. Спасибо!!!
+				+e.photo-row.row.align-items-center
+					+sTalkPhoto('camera', 'Смотреть фото')
+					+sTalkPhoto('play-icon', 'Смотреть видео')
+
+mixin sTalkPhoto(iconName, txt)
+	.col-auto
+		+e.link(href="#")
+			+e.SPAN.ball
+				img(loading="lazy" src=`img/svg/${iconName}.svg` alt="")
+			+e.SPAN.txt=txt

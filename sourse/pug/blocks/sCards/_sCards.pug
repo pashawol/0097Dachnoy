@@ -67,10 +67,14 @@ mixin sCardsItem(data)
 				+e.scheme(href=`img/@2x/scheme-big.png` data-fancybox=`sCatalogSlide-${data.mod + data.imgNum}`)
 					+pic(`scheme-img.png`)(class="scheme-img")
 				+e.chars-row.row.align-items-center
-					+sCardsChar(1, 'Площадь:', '91 м2')
-					+sCardsChar(2, 'Этажность:', '3')
-					+sCardsChar(3, 'Размер:', '6 х 8 м')
-					+sCardsChar(4, 'Срок:', '30 дней')
+					.col-6
+						+sCardsChar(1, 'Площадь:', '91 м2')
+					.col-6
+						+sCardsChar(2, 'Этажность:', '3')
+					.col-6
+						+sCardsChar(3, 'Размер:', '6 х 8 м')
+					.col-6
+						+sCardsChar(4, 'Срок:', '30 дней')
 				+e.foot-row.row.align-items-center
 					.col-auto
 						+e.price от 1 669 000 руб.
@@ -78,11 +82,10 @@ mixin sCardsItem(data)
 						+e.f-btn(href="#") Заказать расчет
 
 mixin sCardsChar(iconNum, key, val)
-	.col-6
-		+e.c-sub-row.row.align-items-center
-			.col-auto
-				+e.c-icon
-					img(loading="lazy" src=`img/svg/sCardsChar-${iconNum}.svg` alt="")
-			.col-auto
-				+e.SPAN.key=key
-				+e.SPAN.val=val
+	+b.char-row.row.align-items-center
+		.col-auto
+			+e.icon
+				img(loading="lazy" src=`img/svg/sCardsChar-${iconNum}.svg` alt="")
+		.col
+			+e.SPAN.key=key
+			+e.SPAN.val=val

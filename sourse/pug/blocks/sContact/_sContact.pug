@@ -1,9 +1,42 @@
 mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
+		+pic('sContact-bg.jpg')(class="sContact__bg")
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
-			.row
+			+e.logo.d-lg-none(href="#")
+				img(loading="lazy" src="img/@2x/logo.png" alt="")
+			+b.section-title.text-center.text-md-start
+				h2 Разрешите нам построить дом Вашей мечты
+			+e.row.row.align-items-center.text-center.text-md-start
+				+sContactItem('Электронная почта', 'mailto:info@dachniy-rai.ru', 'info@dachniy-rai.ru')
+				+sContactItem('Санкт-Петербург', 'tel:+78129429469', '+7 (812) 942-94-69')
+				+sContactItem('Москва', 'tel:+79299727564', '+7 (929) 972-75-64')
+				.col-md-auto
+					+e.btn(href="#") Оставить заявку
+			.d-lg-none
+				+soc()
+			.d-md-none.text-center
+				+e.policy(href="#") Политика конфиденциальности
+			.d-md-none.text-center
+				+e.map.d-lg-none(href="#") Карта сайта
+		+e.footer
+			.container
+				+e.f-row.row.align-items-center
+					.col-auto.d-none.d-lg-block
+						+e.logo(href="#")
+							img(loading="lazy" src="img/@2x/logo.png" alt="")
+					.col-md-auto.text-center.text-md-start
+						+e.years © 2005-2021 «Дачный рай»
+					.col-auto.d-none.d-md-block
+						+e.policy(href="#") Политика конфиденциальности
+					.col-auto.d-none.d-md-block
+						+e.map(href="#") Карта сайта
+					.col-auto.d-none.d-lg-block
+						+soc()
 	// end sContact
+
+mixin sContactItem(title, href, link)
+	.col-md-6.col-lg
+		+e.item
+			+e.title=title
+			+e.link(href=href)=link

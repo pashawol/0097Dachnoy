@@ -4,10 +4,14 @@ extends layout/main.pug
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sCards/_sCards.pug
+include ../blocks/sWork/_sWork.pug
+include ../blocks/sLast/_sLast.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	- let  bg='01.png'
+	- let  bg='01-380.png'
 
 block title
 	- let  title= 'title'
@@ -24,6 +28,11 @@ block pagecontent
 			.swiper-slide 3
 	+headerBlock()
 	+sAbout()
+	+sCatalog()
+	+sCards()
+	+sWork()
+	+sLast()
+
 	+sForm()
 	+sContact()
 	+footer()

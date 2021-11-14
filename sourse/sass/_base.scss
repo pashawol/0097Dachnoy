@@ -107,11 +107,37 @@ body {
 }
 
 .section-title {
+	h2{
+		@include media-breakpoint-down(md){
+			font-size: rem(28);
+		}
+		@include media-breakpoint-up(md){
+			font-size: rem(56);
+		}
+	}
+
 	padding-bottom: var(--sTPB);
 	& > *:last-child{
 		margin-bottom: 0!important;
 	}
 }
+
+.sm-yellow{
+	font-weight: 600;
+	font-size: rem(14);
+	line-height: 1.2;
+	text-transform: uppercase;
+
+	&:after{
+		content: '';
+		display: block;
+		width: rem(50);
+		height: rem(3);
+		background-color: $primary;
+		margin: rem(15) 0;
+	}
+}
+
 
 .mono {
 	font-family: $font-family-code;
@@ -281,12 +307,40 @@ ul {
 .control-wrap {
 	position: relative;
 }
-.swiper-button-hand-prev,
-.swiper-button-hand-next{
+.swiper-button-prev,
+.swiper-button-next {
+	box-shadow: none!important;
+	outline: none!important;
+
+	@include mt();
+	width: rem(50);
+	height: rem(50);
+	border-radius: 50%;
+	background: $white;
+
+
+	border: 1px solid $gray-550;
+	&:hover{
+		background: $gray-550;
+	}
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.icon{
+		font-size: rem(24);
+		color: $body-color;
+	}
+}
+.swiper-button-prev{
+	.icon{
+		transform: rotate(180deg);
+	}
+}
+.swiper-button-next{
 
 }
-.swiper-button-hand-prev{}
-.swiper-button-hand-next{}
 
 
 .swiper-pagination {
@@ -496,4 +550,50 @@ iframe {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+}
+
+//
+.scheme-img{
+	display: block;
+	width: rem(90);
+	height: rem(70);
+	border: 1px solid $primary;
+
+	background: $body-color;
+	img{
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&:after{
+		@include mt();
+		opacity: 0;
+		content: '';
+		position: absolute;
+		width: rem(20);
+		height: rem(20);
+		z-index: 3;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%) scale(var(--aft-scale, 1));
+
+		background-image: url(../img/svg/zoom-yellow.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	&:hover{
+		img{
+			opacity: .25;
+		}
+		&:after{
+			opacity: 1;
+		}
+	}
+
+	//&:hover{
+	//	--aft-scale: 1.2;
+	//}
 }

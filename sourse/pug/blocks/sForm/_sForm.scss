@@ -1,29 +1,204 @@
+// start .sForm
+.sForm {
+	--sPT: #{rem(70)};
+	--sPB: #{rem(64)};
+	--sTPB: #{rem(30)};
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(120)};
+		--sPB: #{rem(122)};
+		--sTPB: #{rem(74)};
+	}
 
-	// start .sForm
-	.sForm {
-		 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-up(xs) {}
-	
-	//
-	@include media-breakpoint-between(md, xl) { }
-	
-	
-	//
-	@include media-breakpoint-only(xs) {}
-	@include media-breakpoint-only(sm) {}
-	@include media-breakpoint-only(md) {}
-	@include media-breakpoint-only(lg) {}
-	@include media-breakpoint-only(xl) {}
-	
-	//
-	@include media-breakpoint-down(xl) {}
-	@include media-breakpoint-down(lg) {}
-	@include media-breakpoint-down(md) {}
-	@include media-breakpoint-down(sm) {}
-	@include media-breakpoint-down(xs) {} 
+	color: $white;
+	position: relative;
+	z-index: 1;
+	&__bg{
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $body-color;
 
+		img{
+			opacity: .1;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.sm-yellow{
+		color: $white;
+
+		&:after{
+			margin: rem(22) auto rem(16);
+		}
+	}
+	.section-title{
+		@include media-breakpoint-between(md,lg){
+			margin: 0 -10px;
+		}
+		h2{
+			font-weight: 800;
+
+			span{
+				font-weight: 500;
+				display: block;
+				@include media-breakpoint-down(md){
+					font-size: rem(20);
+				}
+				@include media-breakpoint-up(md){
+					margin-top: -2px;
+					font-size: rem(40);
+				}
+			}
+		}
+	}
+
+	.form-wrap{
+		&__row{
+			--bs-gutter-x: #{rem(20)};
+			--bs-gutter-y: #{rem(20)};
+			@include media-breakpoint-up(lg){
+				--bs-gutter-x: #{rem(30)};
+				--bs-gutter-y: #{rem(30)};
+			}
+			@include media-breakpoint-up(xl){
+				--bs-gutter-x: #{rem(50)};
+				--bs-gutter-y: #{rem(30)};
+			}
+			margin-bottom: rem(30);
+		}
+
+		//-
+		&__input{
+			border-width: 0px!important;
+			padding: rem(24) rem(20);
+
+			height: rem(70);
+		}
+		&__btn{
+			@extend .btn;
+			@extend .btn-primary;
+			width: 100%;
+			height: rem(70);
+			padding: rem(24) rem(32);
+
+			line-height: 1.2;
+			text-transform: uppercase;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&__checkbox{
+			cursor: pointer;
+			display: flex;
+
+			@include media-breakpoint-up(lg){
+				justify-content: center;
+			}
+			//align-items: center;
+
+			input:checked + .square{
+				&:after{
+					opacity: 1;
+				}
+			}
+			.square{
+				display: block;
+				flex-shrink: 0;
+				background-color: $white;
+				width: rem(22);
+				height: rem(22);
+				margin-right: rem(20);
+				padding: rem(1);
+				border-radius: 2px;
+
+				&:after{
+					@include mt();
+					content: '';
+					opacity: 0;
+					display: block;
+					width: 100%;
+					height: 100%;
+
+					background-image: url(../img/svg/checked.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+			}
+			.txt{
+				display: block;
+			}
+		}
+	}
+	&__row{
+
+
+		margin-bottom: rem(40);
+		--bs-gutter-y: #{rem(20)};
+		@include media-breakpoint-up(sm){
+			margin-bottom: rem(60);
+			--bs-gutter-y: #{rem(24)};
+		}
+		@include media-breakpoint-up(xl){
+			--bs-gutter-x: #{rem(55)};
+			margin-bottom: rem(91);
+		}
+		//col
+		& > *{
+			@include media-breakpoint-up(lg){
+				max-width: calc(100%/ 3);
+			}
+			@include media-breakpoint-up(lg){
+				border-right: 1px solid rgba($white, .2);
+
+				&:nth-child(3n + 3){
+					border-right: 0;
+				}
+			}
+
+			&:nth-child(3n + 1){
+				--txt-mw: #{rem(350)};
+			}
+			&:nth-child(3n + 2){
+				--txt-mw: #{rem(325)};
+			}
+			&:nth-child(3n + 3){
+				--txt-mw: #{rem(307)};
+			}
+		}
+	}
+	&__txt{
+		@include media-breakpoint-down(sm){
+			max-width: var(--txt-mw);
+		}
+		font-weight: 500;
+		font-size: rem(16);
+		line-height: 1.5;
+		position: relative;
+		padding-left: rem(16);
+
+		//max-width: var(--txt-mw);
+		&:before{
+			content: '';
+			position: absolute;
+			top: rem(9);
+			left: 0;
+
+			width: rem(6);
+			height: rem(6);
+			border-radius: 50%;
+			background-color: $primary;
+
+		}
+	}
+
+	//-
+	&__{}
+	&__{}
+	&__{}
 } // end.sForm

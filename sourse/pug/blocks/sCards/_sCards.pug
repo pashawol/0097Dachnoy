@@ -1,0 +1,88 @@
+mixin sCards(data)
+	// start sCards
+	+b.SECTION.sCards.section#sCards&attributes(attributes)
+		.container.tabs
+			+e.btns-row.row.align-items-center
+				+sCardsBtn('Каркасные дома', 'active')
+				+sCardsBtn('Дома из бруса')
+				+sCardsBtn('Бани из бруса')
+			+e.tabs-wrap.tabs__wrap
+				+sCardsContent('', 'active')
+				+sCardsContent('2')
+				+sCardsContent('3')
+			.text-center
+				+e.look-all(href="#") Смотреть все проекты
+	// end sCards
+
+mixin sCardsBtn(txt, addClasses='')
+	.col-auto
+		+e.tabs-btn.tabs__btn(class=addClasses)=txt
+
+mixin sCardsContent(mod, addClasses='')
+	.tabs__content(class=addClasses)
+		+e.main-row.row
+			+sCardsItem({
+				mod: mod,
+				imgNum: 1,
+				title: 'Каркасный дом К-1',
+				tag: true,
+			})
+			+sCardsItem({
+				mod: mod,
+				imgNum: 2,
+				title: 'Каркасный дом К-14',
+			})
+			+sCardsItem({
+				mod: mod,
+				imgNum: 3,
+				title: 'Каркасный дом К-45',
+			})
+			//-
+			+sCardsItem({
+				mod: mod,
+				imgNum: 4,
+				title: 'Каркасный дом К-51',
+			})
+			+sCardsItem({
+				mod: mod,
+				imgNum: 5,
+				title: 'Каркасный дом К-53',
+				tag: true,
+			})
+			+sCardsItem({
+				mod: mod,
+				imgNum: 6,
+				title: 'Каркасный дом К-6',
+			})
+
+mixin sCardsItem(data)
+	.col-md-6.col-lg-4
+		+e.item
+			+pic(`sCards-${data.imgNum}.jpg`)(class='sCards__img')
+			if data.tag
+				+b.yellow-tag Популярный
+			+e.content
+				+b.sm-yellow--title= data.title + data.mod
+				//data-fancy must be uniq
+				+e.scheme(href=`img/@2x/scheme-big.png` data-fancybox=`sCatalogSlide-${data.mod + data.imgNum}`)
+					+pic(`scheme-img.png`)(class="scheme-img")
+				+e.chars-row.row.align-items-center
+					+sCardsChar(1, 'Площадь:', '91 м2')
+					+sCardsChar(2, 'Этажность:', '3')
+					+sCardsChar(3, 'Размер:', '6 х 8 м')
+					+sCardsChar(4, 'Срок:', '30 дней')
+				+e.foot-row.row.align-items-center
+					.col-auto
+						+e.price от 1 669 000 руб.
+					.col.text-end
+						+e.f-btn(href="#") Заказать расчет
+
+mixin sCardsChar(iconNum, key, val)
+	.col-6
+		+e.c-sub-row.row.align-items-center
+			.col-auto
+				+e.c-icon
+					img(loading="lazy" src=`img/svg/sCardsChar-${iconNum}.svg` alt="")
+			.col-auto
+				+e.SPAN.key=key
+				+e.SPAN.val=val

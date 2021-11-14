@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
-	<body class="main-page" data-bg="01.png">
+	<body class="main-page" data-bg="01-380.png">
 		<div class="main-wrapper">
 			<div class="menu-mobile menu-mobile--js d-lg-none">
 				<div class="menu-mobile__inner sb-dd-menu-js">
@@ -402,7 +402,7 @@
 			<section class="sAbout section" id="sAbout">
 				<div class="container">
 					<div class="sAbout__row row">
-						<div class="sAbout__col sAbout__col--left col-lg-5">
+						<div class="sAbout__col sAbout__col--left col-lg-5 d-none d-lg-block">
 							<!-- picture-->
 							<picture class="sAbout__img"> 
 								<source type="image/webp" srcset="img/@2x/webp/sAbout-img.webp" media="(min-width:576px)"/>
@@ -413,51 +413,68 @@
 							<!-- /picture-->
 						</div>
 						<div class="sAbout__col sAbout__col--right col-lg-7">
-							<div class="sAbout__sm">О компании
+							<div class="sm-yellow">О компании
 							</div>
 							<div class="section-title">
 								<h2>Строительство деревянных домов</h2>
+								<!-- picture-->
+								<picture class="sAbout__img d-lg-none"> 
+									<source type="image/webp" srcset="img/@2x/webp/sAbout-img.webp" media="(min-width:576px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/sAbout-img.webp"/>
+									<source type="image/jpg" srcset="img/@2x/sAbout-img.jpg" media="(min-width:576px)"/>
+									<source type="image/jpg" srcset="img/@1x/sAbout-img.jpg"/><img src="img/@2x/sAbout-img.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
 								<p>Хотите построить или купить проект дома из&#160;бруса&#160;или каркаса?</p>
 							</div>
 							<div class="sAbout__descr">
-								<p>
-									У&nbsp;нас можно заказать строительство брусовых или каркасных коттеджей, бань, по&nbsp;типовым либо индивидуальным проектам.
-									
-									В&nbsp;нашем каталоге есть много разных решений, которые помогут быстро сделать выбор. Наши дома во&nbsp;многом превосходят&nbsp;по эксплуатационным качествам здания из&nbsp;газобетона или кирпича.
-								</p>
+								<p>У&nbsp;нас можно заказать строительство брусовых или каркасных коттеджей, бань, по&nbsp;типовым либо индивидуальным проектам.</p>
+								<p>В&nbsp;нашем каталоге есть много разных решений, которые помогут быстро сделать выбор. Наши дома во&nbsp;многом превосходят&nbsp;по эксплуатационным качествам здания из&nbsp;газобетона или кирпича.</p>
 							</div>
 							<a class="sAbout__btn" href="#">Подробее о нас
 							</a>
 						</div>
 					</div>
-					<div class="sAbout__bot-row row">
-						<div class="col-3">
+					<div class="sAbout__bot-row row flex-nowrap">
+						<div class="sAbout__b-col sAbout__b-col--left col-auto">
 							<div class="sAbout__item">
-								<div class="sAbout__i-row row">
+								<div class="sAbout__i-row row flex-nowrap">
 									<div class="sAbout__i-col sAbout__i-col--number col-auto">5
 									</div>
-									<div class="sAbout__i-col sAbout__i-col--txt col-auto">лет надежной гарантии
+									<div class="sAbout__i-col sAbout__i-col--txt col">
+										<div class="sAbout__i-txt d-none d-lg-block">лет надежной гарантии
+										</div>
 									</div>
+								</div>
+								<div class="sAbout__i-txt d-lg-none">лет надежной гарантии
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="sAbout__b-col sAbout__b-col--mid col">
 							<div class="sAbout__item">
-								<div class="sAbout__i-row row">
+								<div class="sAbout__i-row row flex-nowrap">
 									<div class="sAbout__i-col sAbout__i-col--number col-auto">8
 									</div>
-									<div class="sAbout__i-col sAbout__i-col--txt col-auto">лет опыта в строительстве
+									<div class="sAbout__i-col sAbout__i-col--txt col">
+										<div class="sAbout__i-txt d-none d-lg-block">лет опыта в строительстве
+										</div>
 									</div>
+								</div>
+								<div class="sAbout__i-txt d-lg-none">лет опыта в строительстве
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="sAbout__b-col sAbout__b-col--big col-6">
 							<div class="sAbout__item">
-								<div class="sAbout__i-row row">
+								<div class="sAbout__i-row row flex-nowrap">
 									<div class="sAbout__i-col sAbout__i-col--number col-auto">1100
 									</div>
-									<div class="sAbout__i-col sAbout__i-col--txt col-auto">Домов построено по всей России
+									<div class="sAbout__i-col sAbout__i-col--txt col">
+										<div class="sAbout__i-txt d-none d-lg-block">Домов построено по всей России
+										</div>
 									</div>
+								</div>
+								<div class="sAbout__i-txt d-lg-none">Домов построено по всей России
 								</div>
 							</div>
 						</div>
@@ -465,13 +482,2486 @@
 				</div>
 			</section>
 			<!-- end sAbout-->
-			<!-- start sForm-->
-			<section class="sForm section" id="sForm">
+			<!-- start sCatalog-->
+			<section class="sCatalog section" id="sCatalog">
+				<div class="container tabs">
+					<div class="sm-yellow sm-yellow--title">Популярные проекты
+					</div>
+					<div class="sCatalog__top-row row align-items-center">
+						<div class="col">
+							<div class="section-title">
+								<h2>Наш каталог</h2>
+							</div>
+						</div>
+						<div class="col-auto">
+							<div class="sCatalog__btns-row row align-items-center">
+								<div class="col-auto">
+									<div class="sCatalog__tabs-btn tabs__btn active">Цена снижена
+									</div>
+								</div>
+								<div class="col-auto">
+									<div class="sCatalog__tabs-btn tabs__btn">Акция
+									</div>
+								</div>
+								<div class="col-auto">
+									<div class="sCatalog__tabs-btn tabs__btn">Новинка сезона
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sCatalog__main-row row">
+						<div class="sCatalog__col sCatalog__col--left col-auto d-none d-lg-block">
+							<div class="sCatalog__descr">
+								<p>В каталоге представлены наши типовые проекты каркасных домов.</p>
+								<p>Но по желанию клиентов можем сделать в них перепланировку или полностью от начала разработать индивидуальный проект.</p>
+								<p>Закажите расчет проекта уже сегодня!</p>
+							</div>
+							<a class="sCatalog__btn" href="#">Перейти в каталог
+							</a>
+						</div>
+						<div class="sCatalog__col sCatalog__col--right col-auto tabs__wrap">
+							<div class="tabs__content active">
+								<div class="sCatalog__slider-wrap">
+									<div class="swiper sCatalogTab-slider-js">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="sCatalog__slide">
+													<div class="sCatalog__slide-row row">
+														<div class="sCatalog__s-col sCatalog__s-col--left col-md-6">
+															<!-- picture-->
+															<picture class="sCatalog__img"> 
+																<source type="image/webp" srcset="img/@2x/webp/sCatalogSlide-1.webp" media="(min-width:576px)"/>
+																<source type="image/webp" srcset="img/@1x/webp/sCatalogSlide-1.webp"/>
+																<source type="image/jpg" srcset="img/@2x/sCatalogSlide-1.jpg" media="(min-width:576px)"/>
+																<source type="image/jpg" srcset="img/@1x/sCatalogSlide-1.jpg"/><img src="img/@2x/sCatalogSlide-1.jpg" alt="" loading="lazy"/>
+															</picture>
+															<!-- /picture-->
+															<div class="yellow-tag">Цена снижена
+															</div>
+															<!--data-fancy must be uniq-->
+															<a class="sCatalog__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-f1">
+																<!-- picture-->
+																<picture class="scheme-img"> 
+																	<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+																	<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+																	<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+																	<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+																</picture>
+																<!-- /picture-->
+															</a>
+														</div>
+														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
+															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 
+															</div>
+															<div class="sCatalog__chars">
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Размер
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">6 х 9 м
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Площадь
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">91 м2
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Этажность
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">1 + мансарда
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Стоимость
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">от 1 960 000 руб.
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<a class="sCatalog__s-btn" href="#">Заказать расчет
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sCatalog__slide">
+													<div class="sCatalog__slide-row row">
+														<div class="sCatalog__s-col sCatalog__s-col--left col-md-6">
+															<!-- picture-->
+															<picture class="sCatalog__img"> 
+																<source type="image/webp" srcset="img/@2x/webp/sCatalogSlide-1.webp" media="(min-width:576px)"/>
+																<source type="image/webp" srcset="img/@1x/webp/sCatalogSlide-1.webp"/>
+																<source type="image/jpg" srcset="img/@2x/sCatalogSlide-1.jpg" media="(min-width:576px)"/>
+																<source type="image/jpg" srcset="img/@1x/sCatalogSlide-1.jpg"/><img src="img/@2x/sCatalogSlide-1.jpg" alt="" loading="lazy"/>
+															</picture>
+															<!-- /picture-->
+															<div class="yellow-tag">Цена снижена
+															</div>
+															<!--data-fancy must be uniq-->
+															<a class="sCatalog__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-f12sl Цена">
+																<!-- picture-->
+																<picture class="scheme-img"> 
+																	<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+																	<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+																	<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+																	<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+																</picture>
+																<!-- /picture-->
+															</a>
+														</div>
+														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
+															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 2sl Цена
+															</div>
+															<div class="sCatalog__chars">
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Размер
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">6 х 9 м
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Площадь
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">91 м2
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Этажность
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">1 + мансарда
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Стоимость
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">от 1 960 000 руб.
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<a class="sCatalog__s-btn" href="#">Заказать расчет
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sCatalog__slide">
+													<div class="sCatalog__slide-row row">
+														<div class="sCatalog__s-col sCatalog__s-col--left col-md-6">
+															<!-- picture-->
+															<picture class="sCatalog__img"> 
+																<source type="image/webp" srcset="img/@2x/webp/sCatalogSlide-1.webp" media="(min-width:576px)"/>
+																<source type="image/webp" srcset="img/@1x/webp/sCatalogSlide-1.webp"/>
+																<source type="image/jpg" srcset="img/@2x/sCatalogSlide-1.jpg" media="(min-width:576px)"/>
+																<source type="image/jpg" srcset="img/@1x/sCatalogSlide-1.jpg"/><img src="img/@2x/sCatalogSlide-1.jpg" alt="" loading="lazy"/>
+															</picture>
+															<!-- /picture-->
+															<div class="yellow-tag">Цена снижена
+															</div>
+															<!--data-fancy must be uniq-->
+															<a class="sCatalog__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-f13sl Цена">
+																<!-- picture-->
+																<picture class="scheme-img"> 
+																	<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+																	<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+																	<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+																	<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+																</picture>
+																<!-- /picture-->
+															</a>
+														</div>
+														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
+															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 3sl Цена
+															</div>
+															<div class="sCatalog__chars">
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Размер
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">6 х 9 м
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Площадь
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">91 м2
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Этажность
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">1 + мансарда
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Стоимость
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">от 1 960 000 руб.
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<a class="sCatalog__s-btn" href="#">Заказать расчет
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="sCatalog__arrow-cont">
+											<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+												<svg class="icon icon-chevron-right ">
+													<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+												</svg>
+											</div>
+											<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+												<svg class="icon icon-chevron-right ">
+													<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__content">
+								<div class="sCatalog__slider-wrap">
+									<div class="swiper sCatalogTab-slider-js">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="sCatalog__slide">
+													<div class="sCatalog__slide-row row">
+														<div class="sCatalog__s-col sCatalog__s-col--left col-md-6">
+															<!-- picture-->
+															<picture class="sCatalog__img"> 
+																<source type="image/webp" srcset="img/@2x/webp/sCatalogSlide-1.webp" media="(min-width:576px)"/>
+																<source type="image/webp" srcset="img/@1x/webp/sCatalogSlide-1.webp"/>
+																<source type="image/jpg" srcset="img/@2x/sCatalogSlide-1.jpg" media="(min-width:576px)"/>
+																<source type="image/jpg" srcset="img/@1x/sCatalogSlide-1.jpg"/><img src="img/@2x/sCatalogSlide-1.jpg" alt="" loading="lazy"/>
+															</picture>
+															<!-- /picture-->
+															<div class="yellow-tag">Цена снижена
+															</div>
+															<!--data-fancy must be uniq-->
+															<a class="sCatalog__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-f2">
+																<!-- picture-->
+																<picture class="scheme-img"> 
+																	<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+																	<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+																	<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+																	<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+																</picture>
+																<!-- /picture-->
+															</a>
+														</div>
+														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
+															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 
+															</div>
+															<div class="sCatalog__chars">
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Размер
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">6 х 9 м
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Площадь
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">91 м2
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Этажность
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">1 + мансарда
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Стоимость
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">от 1 960 000 руб.
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<a class="sCatalog__s-btn" href="#">Заказать расчет
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sCatalog__slide">
+													<div class="sCatalog__slide-row row">
+														<div class="sCatalog__s-col sCatalog__s-col--left col-md-6">
+															<!-- picture-->
+															<picture class="sCatalog__img"> 
+																<source type="image/webp" srcset="img/@2x/webp/sCatalogSlide-1.webp" media="(min-width:576px)"/>
+																<source type="image/webp" srcset="img/@1x/webp/sCatalogSlide-1.webp"/>
+																<source type="image/jpg" srcset="img/@2x/sCatalogSlide-1.jpg" media="(min-width:576px)"/>
+																<source type="image/jpg" srcset="img/@1x/sCatalogSlide-1.jpg"/><img src="img/@2x/sCatalogSlide-1.jpg" alt="" loading="lazy"/>
+															</picture>
+															<!-- /picture-->
+															<div class="yellow-tag">Цена снижена
+															</div>
+															<!--data-fancy must be uniq-->
+															<a class="sCatalog__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-f22sl Акция">
+																<!-- picture-->
+																<picture class="scheme-img"> 
+																	<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+																	<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+																	<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+																	<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+																</picture>
+																<!-- /picture-->
+															</a>
+														</div>
+														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
+															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 2sl Акция
+															</div>
+															<div class="sCatalog__chars">
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Размер
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">6 х 9 м
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Площадь
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">91 м2
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Этажность
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">1 + мансарда
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Стоимость
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">от 1 960 000 руб.
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<a class="sCatalog__s-btn" href="#">Заказать расчет
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sCatalog__slide">
+													<div class="sCatalog__slide-row row">
+														<div class="sCatalog__s-col sCatalog__s-col--left col-md-6">
+															<!-- picture-->
+															<picture class="sCatalog__img"> 
+																<source type="image/webp" srcset="img/@2x/webp/sCatalogSlide-1.webp" media="(min-width:576px)"/>
+																<source type="image/webp" srcset="img/@1x/webp/sCatalogSlide-1.webp"/>
+																<source type="image/jpg" srcset="img/@2x/sCatalogSlide-1.jpg" media="(min-width:576px)"/>
+																<source type="image/jpg" srcset="img/@1x/sCatalogSlide-1.jpg"/><img src="img/@2x/sCatalogSlide-1.jpg" alt="" loading="lazy"/>
+															</picture>
+															<!-- /picture-->
+															<div class="yellow-tag">Цена снижена
+															</div>
+															<!--data-fancy must be uniq-->
+															<a class="sCatalog__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-f23sl Акция">
+																<!-- picture-->
+																<picture class="scheme-img"> 
+																	<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+																	<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+																	<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+																	<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+																</picture>
+																<!-- /picture-->
+															</a>
+														</div>
+														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
+															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 3sl Акция
+															</div>
+															<div class="sCatalog__chars">
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Размер
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">6 х 9 м
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Площадь
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">91 м2
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Этажность
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">1 + мансарда
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Стоимость
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">от 1 960 000 руб.
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<a class="sCatalog__s-btn" href="#">Заказать расчет
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="sCatalog__arrow-cont">
+											<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+												<svg class="icon icon-chevron-right ">
+													<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+												</svg>
+											</div>
+											<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+												<svg class="icon icon-chevron-right ">
+													<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__content">
+								<div class="sCatalog__slider-wrap">
+									<div class="swiper sCatalogTab-slider-js">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="sCatalog__slide">
+													<div class="sCatalog__slide-row row">
+														<div class="sCatalog__s-col sCatalog__s-col--left col-md-6">
+															<!-- picture-->
+															<picture class="sCatalog__img"> 
+																<source type="image/webp" srcset="img/@2x/webp/sCatalogSlide-1.webp" media="(min-width:576px)"/>
+																<source type="image/webp" srcset="img/@1x/webp/sCatalogSlide-1.webp"/>
+																<source type="image/jpg" srcset="img/@2x/sCatalogSlide-1.jpg" media="(min-width:576px)"/>
+																<source type="image/jpg" srcset="img/@1x/sCatalogSlide-1.jpg"/><img src="img/@2x/sCatalogSlide-1.jpg" alt="" loading="lazy"/>
+															</picture>
+															<!-- /picture-->
+															<div class="yellow-tag">Цена снижена
+															</div>
+															<!--data-fancy must be uniq-->
+															<a class="sCatalog__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-f3">
+																<!-- picture-->
+																<picture class="scheme-img"> 
+																	<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+																	<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+																	<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+																	<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+																</picture>
+																<!-- /picture-->
+															</a>
+														</div>
+														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
+															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 
+															</div>
+															<div class="sCatalog__chars">
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Размер
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">6 х 9 м
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Площадь
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">91 м2
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Этажность
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">1 + мансарда
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Стоимость
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">от 1 960 000 руб.
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<a class="sCatalog__s-btn" href="#">Заказать расчет
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sCatalog__slide">
+													<div class="sCatalog__slide-row row">
+														<div class="sCatalog__s-col sCatalog__s-col--left col-md-6">
+															<!-- picture-->
+															<picture class="sCatalog__img"> 
+																<source type="image/webp" srcset="img/@2x/webp/sCatalogSlide-1.webp" media="(min-width:576px)"/>
+																<source type="image/webp" srcset="img/@1x/webp/sCatalogSlide-1.webp"/>
+																<source type="image/jpg" srcset="img/@2x/sCatalogSlide-1.jpg" media="(min-width:576px)"/>
+																<source type="image/jpg" srcset="img/@1x/sCatalogSlide-1.jpg"/><img src="img/@2x/sCatalogSlide-1.jpg" alt="" loading="lazy"/>
+															</picture>
+															<!-- /picture-->
+															<div class="yellow-tag">Цена снижена
+															</div>
+															<!--data-fancy must be uniq-->
+															<a class="sCatalog__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-f32sl Новинка">
+																<!-- picture-->
+																<picture class="scheme-img"> 
+																	<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+																	<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+																	<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+																	<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+																</picture>
+																<!-- /picture-->
+															</a>
+														</div>
+														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
+															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 2sl Новинка
+															</div>
+															<div class="sCatalog__chars">
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Размер
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">6 х 9 м
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Площадь
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">91 м2
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Этажность
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">1 + мансарда
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Стоимость
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">от 1 960 000 руб.
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<a class="sCatalog__s-btn" href="#">Заказать расчет
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="sCatalog__slide">
+													<div class="sCatalog__slide-row row">
+														<div class="sCatalog__s-col sCatalog__s-col--left col-md-6">
+															<!-- picture-->
+															<picture class="sCatalog__img"> 
+																<source type="image/webp" srcset="img/@2x/webp/sCatalogSlide-1.webp" media="(min-width:576px)"/>
+																<source type="image/webp" srcset="img/@1x/webp/sCatalogSlide-1.webp"/>
+																<source type="image/jpg" srcset="img/@2x/sCatalogSlide-1.jpg" media="(min-width:576px)"/>
+																<source type="image/jpg" srcset="img/@1x/sCatalogSlide-1.jpg"/><img src="img/@2x/sCatalogSlide-1.jpg" alt="" loading="lazy"/>
+															</picture>
+															<!-- /picture-->
+															<div class="yellow-tag">Цена снижена
+															</div>
+															<!--data-fancy must be uniq-->
+															<a class="sCatalog__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-f33sl Новинка">
+																<!-- picture-->
+																<picture class="scheme-img"> 
+																	<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+																	<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+																	<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+																	<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+																</picture>
+																<!-- /picture-->
+															</a>
+														</div>
+														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
+															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 3sl Новинка
+															</div>
+															<div class="sCatalog__chars">
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Размер
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">6 х 9 м
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Площадь
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">91 м2
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Этажность
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">1 + мансарда
+																		</div>
+																	</div>
+																</div>
+																<div class="sCatalog__char">
+																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
+																		<div class="sCatalog__c-col sCatalog__c-col--key col">Стоимость
+																		</div>
+																		<div class="sCatalog__c-col sCatalog__c-col--val col-auto">от 1 960 000 руб.
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<a class="sCatalog__s-btn" href="#">Заказать расчет
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="sCatalog__arrow-cont">
+											<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+												<svg class="icon icon-chevron-right ">
+													<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+												</svg>
+											</div>
+											<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+												<svg class="icon icon-chevron-right ">
+													<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sCatalog__tags-main-row row">
+						<div class="sCatalog__t-col col-auto ms-auto">
+							<div class="sCatalog__tags-sub-row row">
+								<div class="col-lg-auto">
+									<div class="sCatalog__t-title">Часто спрашивают:
+									</div>
+								</div>
+								<div class="col-lg">
+									<div class="sCatalog__sub-row row">
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">одноэтажные
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">двухэтажные
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">с мансардой
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">дачные дома
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">шале
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">6х6
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">7х7
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">6х8
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">8х8
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">6х9
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">8х9
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">9х9
+											</a>
+										</div>
+										<div class="col-auto">
+											<a class="sCatalog__tag" href="#">дома до 100 кв м
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center d-lg-none">
+						<a class="sCatalog__btn" href="#">Перейти в каталог
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- end sCatalog-->
+			<!-- start sCards-->
+			<section class="sCards section" id="sCards">
+				<div class="container tabs">
+					<div class="sCards__btns-row row align-items-center">
+						<div class="col-auto">
+							<div class="sCards__tabs-btn tabs__btn active">Каркасные дома
+							</div>
+						</div>
+						<div class="col-auto">
+							<div class="sCards__tabs-btn tabs__btn">Дома из бруса
+							</div>
+						</div>
+						<div class="col-auto">
+							<div class="sCards__tabs-btn tabs__btn">Бани из бруса
+							</div>
+						</div>
+					</div>
+					<div class="sCards__tabs-wrap tabs__wrap">
+						<div class="tabs__content active">
+							<div class="sCards__main-row row">
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-1.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-1.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-1.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-1.jpg"/><img src="img/@2x/sCards-1.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="yellow-tag">Популярный
+										</div>
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-1
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-1">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-2.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-2.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-2.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-2.jpg"/><img src="img/@2x/sCards-2.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-14
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-2">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-3.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-3.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-3.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-3.jpg"/><img src="img/@2x/sCards-3.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-45
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-3">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-4.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-4.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-4.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-4.jpg"/><img src="img/@2x/sCards-4.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-51
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-4">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-5.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-5.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-5.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-5.jpg"/><img src="img/@2x/sCards-5.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="yellow-tag">Популярный
+										</div>
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-53
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-5">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-6.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-6.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-6.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-6.jpg"/><img src="img/@2x/sCards-6.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-6
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-6">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<div class="sCards__main-row row">
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-1.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-1.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-1.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-1.jpg"/><img src="img/@2x/sCards-1.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="yellow-tag">Популярный
+										</div>
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-12
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-21">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-2.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-2.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-2.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-2.jpg"/><img src="img/@2x/sCards-2.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-142
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-22">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-3.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-3.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-3.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-3.jpg"/><img src="img/@2x/sCards-3.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-452
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-23">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-4.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-4.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-4.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-4.jpg"/><img src="img/@2x/sCards-4.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-512
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-24">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-5.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-5.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-5.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-5.jpg"/><img src="img/@2x/sCards-5.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="yellow-tag">Популярный
+										</div>
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-532
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-25">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-6.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-6.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-6.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-6.jpg"/><img src="img/@2x/sCards-6.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-62
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-26">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<div class="sCards__main-row row">
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-1.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-1.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-1.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-1.jpg"/><img src="img/@2x/sCards-1.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="yellow-tag">Популярный
+										</div>
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-13
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-31">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-2.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-2.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-2.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-2.jpg"/><img src="img/@2x/sCards-2.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-143
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-32">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-3.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-3.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-3.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-3.jpg"/><img src="img/@2x/sCards-3.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-453
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-33">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-4.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-4.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-4.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-4.jpg"/><img src="img/@2x/sCards-4.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-513
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-34">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-5.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-5.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-5.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-5.jpg"/><img src="img/@2x/sCards-5.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="yellow-tag">Популярный
+										</div>
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-533
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-35">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sCards__item">
+										<!-- picture-->
+										<picture class="sCards__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sCards-6.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sCards-6.webp"/>
+											<source type="image/jpg" srcset="img/@2x/sCards-6.jpg" media="(min-width:576px)"/>
+											<source type="image/jpg" srcset="img/@1x/sCards-6.jpg"/><img src="img/@2x/sCards-6.jpg" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+										<div class="sCards__content">
+											<div class="sm-yellow sm-yellow--title">Каркасный дом К-63
+											</div>
+											<!--data-fancy must be uniq-->
+											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-36">
+												<!-- picture-->
+												<picture class="scheme-img"> 
+													<source type="image/webp" srcset="img/@2x/webp/scheme-img.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/scheme-img.webp"/>
+													<source type="image/png" srcset="img/@2x/scheme-img.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/scheme-img.png"/><img src="img/@2x/scheme-img.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
+											</a>
+											<div class="sCards__chars-row row align-items-center">
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-1.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Площадь:</span><span class="sCards__val">91 м2</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-2.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Этажность:</span><span class="sCards__val">3</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-3.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Размер:</span><span class="sCards__val">6 х 8 м</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="sCards__c-sub-row row align-items-center">
+														<div class="col-auto">
+															<div class="sCards__c-icon"><img loading="lazy" src="img/svg/sCardsChar-4.svg" alt=""/>
+															</div>
+														</div>
+														<div class="col-auto"><span class="sCards__key">Срок:</span><span class="sCards__val">30 дней</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sCards__foot-row row align-items-center">
+												<div class="col-auto">
+													<div class="sCards__price">от 1 669 000 руб.
+													</div>
+												</div>
+												<div class="col text-end">
+													<a class="sCards__f-btn" href="#">Заказать расчет
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<a class="sCards__look-all" href="#">Смотреть все проекты
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- end sCards-->
+			<!-- start sWork-->
+			<section class="sWork section" id="sWork">
+				<div class="container">
+					<div class="sm-yellow sm-yellow--title">Схема сотрудничества
+					</div>
+					<div class="section-title">
+						<div class="section-title__row row">
+							<div class="col-lg">
+								<h2>Как мы работаем</h2>
+							</div>
+							<div class="col-lg-auto">
+								<p>Оптимальная схема сотрудничества, придерживаясь которой выигрывают все.</p>
+							</div>
+						</div>
+					</div>
+					<div class="sWork__items-wrap">
+						<div class="sWork__items-row row">
+							<div class="col-md-6">
+								<div class="sWork__item">
+									<div class="sWork__sub-row row">
+										<div class="col-auto">
+											<div class="sWork__ball"><img loading="lazy" src="img/svg/sWorkItem-1.svg" alt=""/>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sm-yellow sm-yellow--item">Согласование
+											</div>
+											<div class="sWork__descr">Согласовываем с клиентом проект и&#160;договор, где будут прописаны все условия, гарантии и обязательства.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="sWork__item">
+									<div class="sWork__sub-row row">
+										<div class="col-auto">
+											<div class="sWork__ball"><img loading="lazy" src="img/svg/sWorkItem-2.svg" alt=""/>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sm-yellow sm-yellow--item">Доставка
+											</div>
+											<div class="sWork__descr">Доставляем материал и&#160;рабочую бригаду на&#160;место проведения строительных работ.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="sWork__item">
+									<div class="sWork__sub-row row">
+										<div class="col-auto">
+											<div class="sWork__ball"><img loading="lazy" src="img/svg/sWorkItem-3.svg" alt=""/>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sm-yellow sm-yellow--item">Выгрузка
+											</div>
+											<div class="sWork__descr">Выгрузка материала производится бесплатно в рамках 50 м от возможного места стоянки автотранспорта.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="sWork__item">
+									<div class="sWork__sub-row row">
+										<div class="col-auto">
+											<div class="sWork__ball"><img loading="lazy" src="img/svg/sWorkItem-4.svg" alt=""/>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sm-yellow sm-yellow--item">Приемка материала
+											</div>
+											<div class="sWork__descr">Клиент принимает материал и вносит оплату в соответствии с договором.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="sWork__item">
+									<div class="sWork__sub-row row">
+										<div class="col-auto">
+											<div class="sWork__ball"><img loading="lazy" src="img/svg/sWorkItem-5.svg" alt=""/>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sm-yellow sm-yellow--item">Строительство
+											</div>
+											<div class="sWork__descr">Производим все основные строительные работы от возведения фундамента, до прокладки инженерных сетей.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="sWork__item">
+									<div class="sWork__sub-row row">
+										<div class="col-auto">
+											<div class="sWork__ball"><img loading="lazy" src="img/svg/sWorkItem-6.svg" alt=""/>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sm-yellow sm-yellow--item">Отделка
+											</div>
+											<div class="sWork__descr">Выполняем внешнюю и внутреннюю финишную отделку в соответствии с проектом.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="sWork__item">
+									<div class="sWork__sub-row row">
+										<div class="col-auto">
+											<div class="sWork__ball"><img loading="lazy" src="img/svg/sWorkItem-7.svg" alt=""/>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sm-yellow sm-yellow--item">Приемка объекта
+											</div>
+											<div class="sWork__descr">Клиент осматривает объект строительства, подписываем акт приемки-сдачи.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="sWork__item">
+									<div class="sWork__sub-row row">
+										<div class="col-auto">
+											<div class="sWork__ball"><img loading="lazy" src="img/svg/sWorkItem-8.svg" alt=""/>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sm-yellow sm-yellow--item">Окончательный расчет
+											</div>
+											<div class="sWork__descr">Клиент выплачивает оставшуюся сумму по&#160;договору.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sWork-->
+			<!-- start sLast-->
+			<section class="sLast section" id="sLast">
 				<div class="container">
 					<div class="section-title text-center">
-						<h2>sForm</h2>
+						<h2>sLast</h2>
 					</div>
 					<div class="row"></div>
+				</div>
+			</section>
+			<!-- end sLast-->
+			<!-- start sForm-->
+			<section class="sForm section" id="sForm">
+				<!-- picture-->
+				<picture class="sForm__bg"> 
+					<source type="image/webp" srcset="img/@2x/webp/sForm-bg.webp" media="(min-width:576px)"/>
+					<source type="image/webp" srcset="img/@1x/webp/sForm-bg.webp"/>
+					<source type="image/jpg" srcset="img/@2x/sForm-bg.jpg" media="(min-width:576px)"/>
+					<source type="image/jpg" srcset="img/@1x/sForm-bg.jpg"/><img src="img/@2x/sForm-bg.jpg" alt="" loading="lazy"/>
+				</picture>
+				<!-- /picture-->
+				<div class="container">
+					<div class="sm-yellow text-center">Это интересно
+					</div>
+					<div class="section-title text-center">
+						<h2>Бесплатная экскурсия<span>на строящийся объект</span></h2>
+					</div>
+					<div class="sForm__row row justify-content-center">
+						<div class="col-lg-4">
+							<div class="sForm__txt">подробно ознакомитесь с технологией возведения домов
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="sForm__txt">убедитесь в качестве используемых нашей&#160;компанией материалов
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="sForm__txt">лично познакомитесь с прорабом и&#160;бригадой&#160;строителей
+							</div>
+						</div>
+					</div>
+					<div class="form-wrap">
+						<form>
+							<div class="form-wrap__row row">
+								<div class="col-lg">
+									<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder="Ваше имя"/>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg">
+									<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="tel" type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _"/>
+									</div>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-lg-auto">
+									<button class="form-wrap__btn" type="submit">Записаться на экскурсию
+									</button>
+								</div>
+							</div>
+							<label class="form-wrap__checkbox">
+								<input class="invisible" type="checkbox" name="policy" checked="checked"/><span class="square"></span><span class="txt">Даю согласие на обработку своих персональных данных</span>
+							</label>
+						</form>
+					</div>
 				</div>
 			</section>
 			<!-- end sForm-->

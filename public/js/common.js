@@ -253,7 +253,7 @@ const $ = jQuery;
 function eventHandler() {
 	// JSCCommon.ifie();
 	JSCCommon.modalCall();
-	// JSCCommon.tabscostume();
+	JSCCommon.tabscostume();
 	JSCCommon.mobileMenu();
 	// JSCCommon.inputMask();
 	// JSCCommon.sendForm();
@@ -316,6 +316,9 @@ function eventHandler() {
 		freeModeMomentum: true,
 	};
 
+	// observer: true,
+	// observeParents: true,
+
 	let defSlider = new Swiper('selector', {
 		...defaultSl,
 		...freeMomentum,
@@ -343,9 +346,21 @@ function eventHandler() {
 	$('.toggle-search-js').click(function (){
 		$('.s-col-js').toggleClass('active');
 	})
+	//-
+	let sCatalogTabSlider = new Swiper('.sCatalogTab-slider-js', {
+		observer: true,
+		observeParents: true,
+
+		spaceBetween: 50,
+		watchOverflow: true,
+		//loop: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
 
 	// modal window
-
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

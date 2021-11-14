@@ -1,0 +1,92 @@
+mixin sCatalog(data)
+	// start sCatalog
+	+b.SECTION.sCatalog.section#sCatalog&attributes(attributes)
+		.container.tabs
+			+b.sm-yellow--title Популярные проекты
+			+e.top-row.row.align-items-center
+				.col
+					+b.section-title
+						h2 Наш каталог
+				.col-auto
+					+e.btns-row.row.align-items-center
+						+sCatalogLink('Цена снижена', 'active')
+						+sCatalogLink('Акция')
+						+sCatalogLink('Новинка сезона')
+			+e.main-row.row
+				+e.col--left.col-auto.d-none.d-lg-block
+					+e.descr
+						p В каталоге представлены наши типовые проекты каркасных домов.
+						p Но по желанию клиентов можем сделать в них перепланировку или полностью от начала разработать индивидуальный проект.
+						p Закажите расчет проекта уже сегодня!
+					+e.btn(href="#") Перейти в каталог
+				+e.col--right.col-auto.tabs__wrap
+					+sCatalogTab('Цена', 'active', 'f1')
+					+sCatalogTab('Акция', '', 'f2')
+					+sCatalogTab('Новинка', '', 'f3')
+			+e.tags-main-row.row
+				+e.t-col.col-auto.ms-auto
+					+e.tags-sub-row.row
+						.col-lg-auto
+							+e.t-title Часто спрашивают:
+						.col-lg
+							+e.sub-row.row
+								+sCatalogTag('одноэтажные')
+								+sCatalogTag('двухэтажные')
+								+sCatalogTag('с мансардой')
+								+sCatalogTag('дачные дома')
+								+sCatalogTag('шале')
+								+sCatalogTag('6х6')
+								+sCatalogTag('7х7')
+								+sCatalogTag('6х8')
+								+sCatalogTag('8х8')
+								+sCatalogTag('6х9')
+								+sCatalogTag('8х9')
+								+sCatalogTag('9х9')
+								+sCatalogTag('дома до 100 кв м')
+			.text-center.d-lg-none
+				+e.btn(href="#") Перейти в каталог
+	// end sCatalog
+
+mixin sCatalogTag(txt)
+	.col-auto
+		+e.tag(href="#")=txt
+
+mixin sCatalogTab(mod='', activeClasses='', fancyMod='')
+	.tabs__content(class=activeClasses)
+		+e.slider-wrap
+			.swiper.sCatalogTab-slider-js
+				.swiper-wrapper
+					+sCatalogSlide('', '', fancyMod)
+					+sCatalogSlide('2sl ', mod, fancyMod)
+					+sCatalogSlide('3sl ', mod, fancyMod)
+				+e.arrow-cont
+					+arrow()
+
+mixin sCatalogLink(txt, activeClasses='')
+	.col-auto
+		+e.tabs-btn.tabs__btn(class=activeClasses)=txt
+
+mixin sCatalogSlide(num='', mod='', fancyMod='')
+	.swiper-slide
+		+e.slide
+			+e.slide-row.row
+				+e.s-col--left.col-md-6
+					+pic('sCatalogSlide-1.jpg')(class='sCatalog__img')
+					+b.yellow-tag Цена снижена
+					//data-fancy must be uniq
+					+e.scheme(href=`img/@2x/scheme-big.png` data-fancybox=`sCatalogSlide-${fancyMod +  num + mod}`)
+						+pic(`scheme-img.png`)(class="scheme-img")
+				+e.s-col--right.col-md-6
+					+b.sm-yellow--slide=`Каркасный дом К-6 ${num + mod}`
+					+e.chars
+						+sCatalogSlideChar('Размер', '6 х 9 м')
+						+sCatalogSlideChar('Площадь', '91 м2')
+						+sCatalogSlideChar('Этажность', '1 + мансарда')
+						+sCatalogSlideChar('Стоимость', 'от 1 960 000 руб.')
+					+e.s-btn(href="#") Заказать расчет
+
+mixin sCatalogSlideChar(key, val)
+	+e.char
+		+e.char-row.row.align-items-center.gy-1.gx-2
+			+e.c-col--key.col=key
+			+e.c-col--val.col-auto=val

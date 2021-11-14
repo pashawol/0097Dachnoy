@@ -1,9 +1,37 @@
 mixin sForm()
 	// start sForm
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
+		+pic('sForm-bg.jpg')(class="sForm__bg")
 		.container
+			+b.sm-yellow.text-center Это интересно
 			+b.section-title.text-center
-				h2 sForm
-				
-			.row
+				h2
+					| Бесплатная экскурсия
+					span на строящийся объект
+			+e.row.row.justify-content-center
+				+sFormTxtItem()
+					| подробно ознакомитесь с технологией возведения домов
+				+sFormTxtItem()
+					| убедитесь в качестве используемых нашей&#160;компанией материалов
+				+sFormTxtItem()
+					| лично познакомитесь с прорабом и&#160;бригадой&#160;строителей
+			+form-wrap
+				+e.row.row
+					.col-lg
+						+input('Ваше имя', 'text')
+					.col-lg
+						+input('+7 (_ _ _) _ _ _ - _ _ - _ _', 'tel')
+					.col-lg-auto
+						+e.btn(type="submit") Записаться на экскурсию
+				+e.LABEL.checkbox
+					input(type="checkbox" name="policy" checked class="invisible")
+					span.square
+					span.txt Даю согласие на обработку своих персональных данных
+
+
 	// end sForm
+
+mixin sFormTxtItem()
+	.col-lg-4
+		+e.txt
+			block

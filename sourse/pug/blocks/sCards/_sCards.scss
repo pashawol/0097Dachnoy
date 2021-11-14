@@ -99,6 +99,7 @@
 	.sm-yellow{
 
 		&--title{
+			color: $body-color!important;
 			text-transform: none;
 
 			max-width: calc(100% - #{rem(85)});

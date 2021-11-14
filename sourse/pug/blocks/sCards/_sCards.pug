@@ -1,6 +1,6 @@
 mixin sCards(data)
 	// start sCards
-	+b.SECTION.sCards.section#sCards&attributes(attributes)
+	+b.sCards.section#sCards&attributes(attributes)
 		.container.tabs
 			+e.btns-row.row.align-items-center
 				+sCardsBtn('Каркасные дома', 'active')
@@ -58,11 +58,12 @@ mixin sCardsContent(mod, addClasses='')
 mixin sCardsItem(data)
 	.col-md-6.col-lg-4
 		+e.item
-			+pic(`sCards-${data.imgNum}.jpg`)(class='sCards__img')
+			a(href="#" class="d-block")
+				+pic(`sCards-${data.imgNum}.jpg`)(class='sCards__img')
 			if data.tag
 				+b.yellow-tag Популярный
 			+e.content
-				+b.sm-yellow--title= data.title + data.mod
+				+b.sm-yellow--title(href="#")= data.title + data.mod
 				//data-fancy must be uniq
 				+e.scheme(href=`img/@2x/scheme-big.png` data-fancybox=`sCatalogSlide-${data.mod + data.imgNum}`)
 					+pic(`scheme-img.png`)(class="scheme-img")

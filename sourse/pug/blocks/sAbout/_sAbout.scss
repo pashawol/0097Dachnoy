@@ -8,9 +8,18 @@
 		--sPB: #{rem(90)};
 		--sTPB: #{rem(30)};
 	}
+	.container{
+		//position: relative;
+	}
+	--row-gx: #{rem(101)};
 	&__row{
-		--bs-gutter-x: #{rem(101)};
+		position: relative;
+		--bs-gutter-x: var(--row-gx);
+
 		--bs-gutter-y: #{rem(30)};
+		@include media-breakpoint-up(lg){
+			--bs-gutter-y: #{rem(0)};
+		}
 
 		margin-bottom: rem(48);
 		@include media-breakpoint-up(xl){
@@ -28,6 +37,7 @@
 			}
 		}
 	}
+	//-
 	&__col{
 		--l-col-w: 46%;
 		--r-col-w: calc(100% - var(--l-col-w));
@@ -49,13 +59,22 @@
 	}
 	&__img{
 		@extend .accept-ratio-frame;
-		min-height: 100%;
+		//min-height: 100%;
 
-		margin-bottom: rem(33);
-		padding-top: 115%;
+		@include media-breakpoint-down(lg){
+			margin-bottom: rem(33);
+			padding-top: 115%;
+		}
 		@include media-breakpoint-up(lg){
-			padding-top: calc(570/500 * 100%);
-			margin-bottom: 0;
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: calc(var(--row-gx)/2);
+			height: 100%;
+			width: calc(var(--l-col-w) - var(--row-gx));
+
+			//padding-top: calc(570/500 * 100%);
+			//margin-bottom: 0;
 		}
 	}
 	.section-title{

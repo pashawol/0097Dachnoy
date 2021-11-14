@@ -125,7 +125,6 @@ const JSCCommon = {
 		}
 	},
 	// /tabs
-
 	inputMask() {
 		// mask for input
 		let InputTel = [].slice.call(document.querySelectorAll('input[type="tel"]'));
@@ -133,53 +132,6 @@ const JSCCommon = {
 		Inputmask("+9(999)999-99-99").mask(InputTel);
 	},
 	// /inputMask
-	ifie() {
-		var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-		if (isIE11) {
-			document.body.insertAdjacentHTML("beforeend", '<div class="browsehappy">	<p class=" container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p></div>');
-		}
-	},
-	sendForm() {
-		var gets = (function () {
-			var a = window.location.search;
-			var b = new Object();
-			var c;
-			a = a.substring(1).split("&");
-			for (var i = 0; i < a.length; i++) {
-				c = a[i].split("=");
-				b[c[0]] = c[1];
-			}
-			return b;
-		})();
-		// form
-		$(document).on('submit', "form", function (e) {
-			e.preventDefault();
-			const th = $(this);
-			var data = th.serialize();
-			th.find('.utm_source').val(decodeURIComponent(gets['utm_source'] || ''));
-			th.find('.utm_term').val(decodeURIComponent(gets['utm_term'] || ''));
-			th.find('.utm_medium').val(decodeURIComponent(gets['utm_medium'] || ''));
-			th.find('.utm_campaign').val(decodeURIComponent(gets['utm_campaign'] || ''));
-			$.ajax({
-				url: 'action.php',
-				type: 'POST',
-				data: data,
-			}).done(function (data) {
-
-				Fancybox.close();
-				Fancybox.show([{ src: "#modal-thanks", type: "inline" }]);
-				// window.location.replace("/thanks.html");
-				setTimeout(function () {
-					// Done Functions
-					th.trigger("reset");
-					// $.magnificPopup.close();
-					// ym(53383120, 'reachGoal', 'zakaz');
-					// yaCounter55828534.reachGoal('zakaz');
-				}, 4000);
-			}).fail(function () { });
-
-		});
-	},
 	heightwindow() {
 		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 		let vh = window.innerHeight * 0.01;
@@ -194,30 +146,6 @@ const JSCCommon = {
 		}, { passive: true });
 	},
 	//pure js
-	animateScroll(topShift=80) {
-		document.addEventListener('click', function (){
-			if (event.target.closest('.menu li a, .scroll-link')) {
-				let self = event.target.closest('.menu li a, .scroll-link');
-				event.preventDefault();
-
-				let targetSelector = self.getAttribute('href');
-				let target = document.querySelector(targetSelector);
-
-				if (!target) {
-					self.setAttribute("href", '/' + targetSelector);
-				}
-				else{
-					event.preventDefault();
-					let targetTop = target.offsetTop;
-					window.scrollTo({
-						top: targetTop - topShift,
-						behavior: "smooth",
-					});
-				}
-
-			}
-		});
-	},
 	makeDDGroup() {
 		let parents = document.querySelectorAll('.dd-group-js');
 		for (let parent of parents) {
@@ -251,17 +179,13 @@ const JSCCommon = {
 const $ = jQuery;
 
 function eventHandler() {
-	// JSCCommon.ifie();
 	JSCCommon.modalCall();
 	JSCCommon.tabscostume();
 	JSCCommon.mobileMenu();
-	// JSCCommon.inputMask();
-	// JSCCommon.sendForm();
+	JSCCommon.inputMask();
 	JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
-	// JSCCommon.animateScroll();
-	
-	// JSCCommon.CustomInputFile(); 
+
 	var x = window.location.host;
 	let screenName;
 	screenName = document.body.dataset.bg;
@@ -284,55 +208,6 @@ function eventHandler() {
 	window.addEventListener('resize', calcHeaderHeight, { passive: true });
 	window.addEventListener('scroll', calcHeaderHeight, { passive: true });
 	calcHeaderHeight();
-
-
-	let defaultSl = {
-		spaceBetween: 0,
-		lazy: {
-			loadPrevNext: true,
-		},
-		watchOverflow: true,
-		loop: true,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		pagination: {
-			el: ' .swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-			// renderBullet: function (index, className) {
-			// 	return '<span class="' + className + '">' + (index + 1) + '</span>';
-			// }
-		},
-	}
-
-	let freeMomentum = {
-		slidesPerView: 'auto',
-		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
-	};
-
-	// observer: true,
-	// observeParents: true,
-
-	let defSlider = new Swiper('selector', {
-		...defaultSl,
-		...freeMomentum,
-	});
-
-	//
-	// $('.free-dd-head-js, .sb-dd-menu-js li.menu-item-has-children > a').click(function () {
-	// 	event.preventDefault();
-	// 	let content = this.parentElement.querySelector('.free-dd-content-js') || this.nextElementSibling;
-	// 	$(this.parentElement).toggleClass('active');
-	// 	$(content).slideToggle(function () {
-	// 		$(this).toggleClass('active');
-	// 	});
-	// });
 	$('.free-dd-head-js, .sb-dd-menu-js li.menu-item-has-children').click(function () {
 		event.preventDefault();
 		let content = this.parentElement.querySelector('.free-dd-content-js') || this.querySelector('.sub-menu');

@@ -38,7 +38,7 @@ mixin headerBlock()
 
 mixin headerBlockItem(data)
 	.col-sm-6.col-lg-3
-		+e.item
+		+e.item(href="#")
 			+pic(`headerBlock-${data.imgNum}.jpg`)(class="plates__ball")
 			+e.box
 				+e.title=data.title

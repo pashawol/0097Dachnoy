@@ -82,6 +82,7 @@
 		}
 	}
 	&__item{
+		display: block;
 		position: relative;
 		z-index: 1;
 	}
@@ -96,6 +97,7 @@
 		}
 	}
 	&__foot{
+		display: block;
 		background: rgba($body-color, .9);
 		color: $white;
 		position: absolute;
@@ -109,6 +111,9 @@
 		}
 	}
 	&__f-row{
+		& > *{
+			display: block;
+		}
 		--bs-gutter-x: #{rem(20)};
 		--bs-gutter-y: #{rem(5)};
 		@include media-breakpoint-up(sm){

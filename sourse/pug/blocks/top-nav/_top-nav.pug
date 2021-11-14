@@ -31,7 +31,7 @@ mixin top-nav()
 				+topNavItem('Санкт-Петербург', 'tel:+78129429469', '+7 (812) 942-94-69')(class="")
 				+topNavItem('Москва', 'tel:+79299727564', '+7 (929) 972-75-64', 'pe-0')(class="d-none d-sm-block")
 				.col-auto
-					+e.wa
+					+e.wa(href="#")
 						img(loading="lazy" src="img/svg/watsapp.svg" alt="")
 				.col-auto.ms-auto
 					+e.btn.link-modal-js(href='#modal-call') Заказать звонок

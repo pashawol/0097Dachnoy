@@ -12,6 +12,8 @@
 	--s-catalog-bg: #{$gray-100};
 	background: var(--s-catalog-bg);
 	.sm-yellow{
+		display: block;
+		color: $body-color;
 		&--title{
 			&:after{
 				margin: rem(19) 0 rem(18);

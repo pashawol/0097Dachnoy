@@ -23,10 +23,10 @@ mixin sLast(data)
 
 mixin sLastSlide(imgNum)
 	.swiper-slide
-		+e.item
+		+e.item(href="#")
 			+pic(`sLast-${imgNum}.jpg`)(class="sLast__img")
 			+e.foot
-				+e.f-row.row.align-items-center
+				+e.f-row.row.align-items-center.d-flex
 					.col-6.col-md-4
 						+sCardsChar(1, 'Площадь:', '91 м2')
 					.col-6.col-md-4.d-none.d-md-block
@@ -38,6 +38,6 @@ mixin sLastSlide(imgNum)
 					.col-6.col-md-4
 						+sCardsChar(4, 'Срок:', '30 дней')
 					.col-6.col-md-4
-						+e.link(href="#" target="_blank")
+						+e.link
 							span Перейти в проект
 							+icon('arrow-right')

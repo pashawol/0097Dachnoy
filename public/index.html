@@ -15,6 +15,23 @@
 	</head>
 	<body class="main-page" data-bg="01-380.png">
 		<div class="main-wrapper">
+			<div class="fixed-btns">
+				<a class="fixed-btns__btn" href="#">
+					<svg class="icon icon-calculator ">
+						<use xlink:href="img/svg/sprite.svg#calculator"></use>
+					</svg>
+				</a>
+				<a class="fixed-btns__btn" href="#">
+					<svg class="icon icon-tell ">
+						<use xlink:href="img/svg/sprite.svg#tell"></use>
+					</svg>
+				</a>
+				<a class="fixed-btns__btn" href="#">
+					<svg class="icon icon-chat ">
+						<use xlink:href="img/svg/sprite.svg#chat"></use>
+					</svg>
+				</a>
+			</div>
 			<div class="menu-mobile menu-mobile--js d-lg-none">
 				<div class="menu-mobile__inner sb-dd-menu-js">
 					<!-- picture-->
@@ -127,8 +144,8 @@
 								</div>
 							</div>
 							<div class="col-auto">
-								<div class="top-nav__wa"><img loading="lazy" src="img/svg/watsapp.svg" alt=""/>
-								</div>
+								<a class="top-nav__wa" href="#"><img loading="lazy" src="img/svg/watsapp.svg" alt=""/>
+								</a>
 							</div>
 							<div class="col-auto ms-auto">
 								<a class="top-nav__btn link-modal-js" href="#modal-call">Заказать звонок
@@ -219,7 +236,7 @@
 				<div class="container">
 					<div class="plates__row row">
 						<div class="col-sm-6 col-lg-3">
-							<div class="plates__item">
+							<a class="plates__item" href="#">
 								<!-- picture-->
 								<picture class="plates__ball"> 
 									<source type="image/webp" srcset="img/@2x/webp/headerBlock-1.webp" media="(min-width:576px)"/>
@@ -260,10 +277,10 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="col-sm-6 col-lg-3">
-							<div class="plates__item">
+							<a class="plates__item" href="#">
 								<!-- picture-->
 								<picture class="plates__ball"> 
 									<source type="image/webp" srcset="img/@2x/webp/headerBlock-2.webp" media="(min-width:576px)"/>
@@ -304,10 +321,10 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="col-sm-6 col-lg-3">
-							<div class="plates__item">
+							<a class="plates__item" href="#">
 								<!-- picture-->
 								<picture class="plates__ball"> 
 									<source type="image/webp" srcset="img/@2x/webp/headerBlock-3.webp" media="(min-width:576px)"/>
@@ -348,10 +365,10 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="col-sm-6 col-lg-3">
-							<div class="plates__item">
+							<a class="plates__item" href="#">
 								<!-- picture-->
 								<picture class="plates__ball"> 
 									<source type="image/webp" srcset="img/@2x/webp/headerBlock-4.webp" media="(min-width:576px)"/>
@@ -392,7 +409,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -403,14 +420,6 @@
 				<div class="container">
 					<div class="sAbout__row row">
 						<div class="sAbout__col sAbout__col--left col-lg-5 d-none d-lg-block">
-							<!-- picture-->
-							<picture class="sAbout__img"> 
-								<source type="image/webp" srcset="img/@2x/webp/sAbout-img.webp" media="(min-width:576px)"/>
-								<source type="image/webp" srcset="img/@1x/webp/sAbout-img.webp"/>
-								<source type="image/jpg" srcset="img/@2x/sAbout-img.jpg" media="(min-width:576px)"/>
-								<source type="image/jpg" srcset="img/@1x/sAbout-img.jpg"/><img src="img/@2x/sAbout-img.jpg" alt="" loading="lazy"/>
-							</picture>
-							<!-- /picture-->
 						</div>
 						<div class="sAbout__col sAbout__col--right col-lg-7">
 							<div class="sm-yellow">О компании
@@ -418,7 +427,7 @@
 							<div class="section-title">
 								<h2>Строительство деревянных домов</h2>
 								<!-- picture-->
-								<picture class="sAbout__img d-lg-none"> 
+								<picture class="sAbout__img"> 
 									<source type="image/webp" srcset="img/@2x/webp/sAbout-img.webp" media="(min-width:576px)"/>
 									<source type="image/webp" srcset="img/@1x/webp/sAbout-img.webp"/>
 									<source type="image/jpg" srcset="img/@2x/sAbout-img.jpg" media="(min-width:576px)"/>
@@ -552,8 +561,8 @@
 															</a>
 														</div>
 														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
-															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 
-															</div>
+															<a class="sm-yellow sm-yellow--slide" href="#">Каркасный дом К-6 
+															</a>
 															<div class="sCatalog__chars">
 																<div class="sCatalog__char">
 																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
@@ -621,8 +630,8 @@
 															</a>
 														</div>
 														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
-															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 2sl Цена
-															</div>
+															<a class="sm-yellow sm-yellow--slide" href="#">Каркасный дом К-6 2sl Цена
+															</a>
 															<div class="sCatalog__chars">
 																<div class="sCatalog__char">
 																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
@@ -690,8 +699,8 @@
 															</a>
 														</div>
 														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
-															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 3sl Цена
-															</div>
+															<a class="sm-yellow sm-yellow--slide" href="#">Каркасный дом К-6 3sl Цена
+															</a>
 															<div class="sCatalog__chars">
 																<div class="sCatalog__char">
 																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
@@ -779,8 +788,8 @@
 															</a>
 														</div>
 														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
-															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 
-															</div>
+															<a class="sm-yellow sm-yellow--slide" href="#">Каркасный дом К-6 
+															</a>
 															<div class="sCatalog__chars">
 																<div class="sCatalog__char">
 																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
@@ -848,8 +857,8 @@
 															</a>
 														</div>
 														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
-															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 2sl Акция
-															</div>
+															<a class="sm-yellow sm-yellow--slide" href="#">Каркасный дом К-6 2sl Акция
+															</a>
 															<div class="sCatalog__chars">
 																<div class="sCatalog__char">
 																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
@@ -917,8 +926,8 @@
 															</a>
 														</div>
 														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
-															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 3sl Акция
-															</div>
+															<a class="sm-yellow sm-yellow--slide" href="#">Каркасный дом К-6 3sl Акция
+															</a>
 															<div class="sCatalog__chars">
 																<div class="sCatalog__char">
 																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
@@ -1006,8 +1015,8 @@
 															</a>
 														</div>
 														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
-															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 
-															</div>
+															<a class="sm-yellow sm-yellow--slide" href="#">Каркасный дом К-6 
+															</a>
 															<div class="sCatalog__chars">
 																<div class="sCatalog__char">
 																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
@@ -1075,8 +1084,8 @@
 															</a>
 														</div>
 														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
-															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 2sl Новинка
-															</div>
+															<a class="sm-yellow sm-yellow--slide" href="#">Каркасный дом К-6 2sl Новинка
+															</a>
 															<div class="sCatalog__chars">
 																<div class="sCatalog__char">
 																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
@@ -1144,8 +1153,8 @@
 															</a>
 														</div>
 														<div class="sCatalog__s-col sCatalog__s-col--right col-md-6">
-															<div class="sm-yellow sm-yellow--slide">Каркасный дом К-6 3sl Новинка
-															</div>
+															<a class="sm-yellow sm-yellow--slide" href="#">Каркасный дом К-6 3sl Новинка
+															</a>
 															<div class="sCatalog__chars">
 																<div class="sCatalog__char">
 																	<div class="sCatalog__char-row row align-items-center gy-1 gx-2">
@@ -1278,7 +1287,7 @@
 			</section>
 			<!-- end sCatalog-->
 			<!-- start sCards-->
-			<section class="sCards section" id="sCards">
+			<div class="sCards section" id="sCards">
 				<div class="container tabs">
 					<div class="sCards__btns-row row align-items-center">
 						<div class="col-auto">
@@ -1298,20 +1307,20 @@
 						<div class="tabs__content active">
 							<div class="sCards__main-row row">
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-1.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-1.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-1.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-1.jpg"/><img src="img/@2x/sCards-1.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-1.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-1.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-1.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-1.jpg"/><img src="img/@2x/sCards-1.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="yellow-tag">Популярный
 										</div>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-1
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-1
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-1">
 												<!-- picture-->
@@ -1379,18 +1388,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-2.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-2.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-2.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-2.jpg"/><img src="img/@2x/sCards-2.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-2.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-2.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-2.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-2.jpg"/><img src="img/@2x/sCards-2.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-14
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-14
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-2">
 												<!-- picture-->
@@ -1458,18 +1467,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-3.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-3.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-3.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-3.jpg"/><img src="img/@2x/sCards-3.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-3.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-3.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-3.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-3.jpg"/><img src="img/@2x/sCards-3.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-45
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-45
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-3">
 												<!-- picture-->
@@ -1537,18 +1546,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-4.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-4.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-4.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-4.jpg"/><img src="img/@2x/sCards-4.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-4.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-4.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-4.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-4.jpg"/><img src="img/@2x/sCards-4.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-51
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-51
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-4">
 												<!-- picture-->
@@ -1616,20 +1625,20 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-5.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-5.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-5.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-5.jpg"/><img src="img/@2x/sCards-5.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-5.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-5.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-5.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-5.jpg"/><img src="img/@2x/sCards-5.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="yellow-tag">Популярный
 										</div>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-53
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-53
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-5">
 												<!-- picture-->
@@ -1697,18 +1706,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-6.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-6.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-6.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-6.jpg"/><img src="img/@2x/sCards-6.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-6.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-6.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-6.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-6.jpg"/><img src="img/@2x/sCards-6.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-6
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-6
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-6">
 												<!-- picture-->
@@ -1780,20 +1789,20 @@
 						<div class="tabs__content">
 							<div class="sCards__main-row row">
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-1.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-1.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-1.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-1.jpg"/><img src="img/@2x/sCards-1.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-1.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-1.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-1.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-1.jpg"/><img src="img/@2x/sCards-1.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="yellow-tag">Популярный
 										</div>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-12
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-12
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-21">
 												<!-- picture-->
@@ -1861,18 +1870,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-2.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-2.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-2.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-2.jpg"/><img src="img/@2x/sCards-2.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-2.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-2.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-2.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-2.jpg"/><img src="img/@2x/sCards-2.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-142
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-142
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-22">
 												<!-- picture-->
@@ -1940,18 +1949,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-3.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-3.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-3.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-3.jpg"/><img src="img/@2x/sCards-3.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-3.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-3.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-3.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-3.jpg"/><img src="img/@2x/sCards-3.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-452
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-452
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-23">
 												<!-- picture-->
@@ -2019,18 +2028,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-4.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-4.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-4.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-4.jpg"/><img src="img/@2x/sCards-4.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-4.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-4.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-4.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-4.jpg"/><img src="img/@2x/sCards-4.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-512
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-512
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-24">
 												<!-- picture-->
@@ -2098,20 +2107,20 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-5.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-5.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-5.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-5.jpg"/><img src="img/@2x/sCards-5.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-5.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-5.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-5.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-5.jpg"/><img src="img/@2x/sCards-5.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="yellow-tag">Популярный
 										</div>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-532
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-532
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-25">
 												<!-- picture-->
@@ -2179,18 +2188,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-6.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-6.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-6.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-6.jpg"/><img src="img/@2x/sCards-6.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-6.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-6.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-6.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-6.jpg"/><img src="img/@2x/sCards-6.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-62
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-62
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-26">
 												<!-- picture-->
@@ -2262,20 +2271,20 @@
 						<div class="tabs__content">
 							<div class="sCards__main-row row">
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-1.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-1.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-1.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-1.jpg"/><img src="img/@2x/sCards-1.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-1.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-1.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-1.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-1.jpg"/><img src="img/@2x/sCards-1.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="yellow-tag">Популярный
 										</div>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-13
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-13
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-31">
 												<!-- picture-->
@@ -2343,18 +2352,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-2.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-2.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-2.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-2.jpg"/><img src="img/@2x/sCards-2.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-2.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-2.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-2.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-2.jpg"/><img src="img/@2x/sCards-2.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-143
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-143
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-32">
 												<!-- picture-->
@@ -2422,18 +2431,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-3.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-3.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-3.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-3.jpg"/><img src="img/@2x/sCards-3.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-3.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-3.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-3.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-3.jpg"/><img src="img/@2x/sCards-3.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-453
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-453
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-33">
 												<!-- picture-->
@@ -2501,18 +2510,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-4.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-4.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-4.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-4.jpg"/><img src="img/@2x/sCards-4.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-4.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-4.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-4.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-4.jpg"/><img src="img/@2x/sCards-4.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-513
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-513
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-34">
 												<!-- picture-->
@@ -2580,20 +2589,20 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-5.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-5.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-5.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-5.jpg"/><img src="img/@2x/sCards-5.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-5.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-5.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-5.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-5.jpg"/><img src="img/@2x/sCards-5.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="yellow-tag">Популярный
 										</div>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-533
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-533
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-35">
 												<!-- picture-->
@@ -2661,18 +2670,18 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<div class="sCards__item">
-										<!-- picture-->
-										<picture class="sCards__img"> 
-											<source type="image/webp" srcset="img/@2x/webp/sCards-6.webp" media="(min-width:576px)"/>
-											<source type="image/webp" srcset="img/@1x/webp/sCards-6.webp"/>
-											<source type="image/jpg" srcset="img/@2x/sCards-6.jpg" media="(min-width:576px)"/>
-											<source type="image/jpg" srcset="img/@1x/sCards-6.jpg"/><img src="img/@2x/sCards-6.jpg" alt="" loading="lazy"/>
-										</picture>
-										<!-- /picture-->
+									<div class="sCards__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture class="sCards__img"> 
+												<source type="image/webp" srcset="img/@2x/webp/sCards-6.webp" media="(min-width:576px)"/>
+												<source type="image/webp" srcset="img/@1x/webp/sCards-6.webp"/>
+												<source type="image/jpg" srcset="img/@2x/sCards-6.jpg" media="(min-width:576px)"/>
+												<source type="image/jpg" srcset="img/@1x/sCards-6.jpg"/><img src="img/@2x/sCards-6.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
 										<div class="sCards__content">
-											<div class="sm-yellow sm-yellow--title">Каркасный дом К-63
-											</div>
+											<a class="sm-yellow sm-yellow--title" href="#">Каркасный дом К-63
+											</a>
 											<!--data-fancy must be uniq-->
 											<a class="sCards__scheme" href="img/@2x/scheme-big.png" data-fancybox="sCatalogSlide-36">
 												<!-- picture-->
@@ -2747,7 +2756,7 @@
 						</a>
 					</div>
 				</div>
-			</section>
+			</div>
 			<!-- end sCards-->
 			<!-- start sWork-->
 			<section class="sWork section" id="sWork">
@@ -2974,7 +2983,7 @@
 						<div class="swiper sLast-slider-js">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<div class="sLast__item">
+									<a class="sLast__item" href="#">
 										<!-- picture-->
 										<picture class="sLast__img"> 
 											<source type="image/webp" srcset="img/@2x/webp/sLast-1.webp" media="(min-width:576px)"/>
@@ -2984,7 +2993,7 @@
 										</picture>
 										<!-- /picture-->
 										<div class="sLast__foot">
-											<div class="sLast__f-row row align-items-center">
+											<div class="sLast__f-row row align-items-center d-flex">
 												<div class="col-6 col-md-4">
 													<div class="char-row row align-items-center">
 														<div class="col-auto">
@@ -3030,18 +3039,18 @@
 													</div>
 												</div>
 												<div class="col-6 col-md-4">
-													<a class="sLast__link" href="#" target="_blank"><span>Перейти в проект</span>
+													<div class="sLast__link"><span>Перейти в проект</span>
 														<svg class="icon icon-arrow-right ">
 															<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
 														</svg>
-													</a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 								<div class="swiper-slide">
-									<div class="sLast__item">
+									<a class="sLast__item" href="#">
 										<!-- picture-->
 										<picture class="sLast__img"> 
 											<source type="image/webp" srcset="img/@2x/webp/sLast-2.webp" media="(min-width:576px)"/>
@@ -3051,7 +3060,7 @@
 										</picture>
 										<!-- /picture-->
 										<div class="sLast__foot">
-											<div class="sLast__f-row row align-items-center">
+											<div class="sLast__f-row row align-items-center d-flex">
 												<div class="col-6 col-md-4">
 													<div class="char-row row align-items-center">
 														<div class="col-auto">
@@ -3097,18 +3106,18 @@
 													</div>
 												</div>
 												<div class="col-6 col-md-4">
-													<a class="sLast__link" href="#" target="_blank"><span>Перейти в проект</span>
+													<div class="sLast__link"><span>Перейти в проект</span>
 														<svg class="icon icon-arrow-right ">
 															<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
 														</svg>
-													</a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 								<div class="swiper-slide">
-									<div class="sLast__item">
+									<a class="sLast__item" href="#">
 										<!-- picture-->
 										<picture class="sLast__img"> 
 											<source type="image/webp" srcset="img/@2x/webp/sLast-3.webp" media="(min-width:576px)"/>
@@ -3118,7 +3127,7 @@
 										</picture>
 										<!-- /picture-->
 										<div class="sLast__foot">
-											<div class="sLast__f-row row align-items-center">
+											<div class="sLast__f-row row align-items-center d-flex">
 												<div class="col-6 col-md-4">
 													<div class="char-row row align-items-center">
 														<div class="col-auto">
@@ -3164,18 +3173,18 @@
 													</div>
 												</div>
 												<div class="col-6 col-md-4">
-													<a class="sLast__link" href="#" target="_blank"><span>Перейти в проект</span>
+													<div class="sLast__link"><span>Перейти в проект</span>
 														<svg class="icon icon-arrow-right ">
 															<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
 														</svg>
-													</a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 								<div class="swiper-slide">
-									<div class="sLast__item">
+									<a class="sLast__item" href="#">
 										<!-- picture-->
 										<picture class="sLast__img"> 
 											<source type="image/webp" srcset="img/@2x/webp/sLast-4.webp" media="(min-width:576px)"/>
@@ -3185,7 +3194,7 @@
 										</picture>
 										<!-- /picture-->
 										<div class="sLast__foot">
-											<div class="sLast__f-row row align-items-center">
+											<div class="sLast__f-row row align-items-center d-flex">
 												<div class="col-6 col-md-4">
 													<div class="char-row row align-items-center">
 														<div class="col-auto">
@@ -3231,15 +3240,15 @@
 													</div>
 												</div>
 												<div class="col-6 col-md-4">
-													<a class="sLast__link" href="#" target="_blank"><span>Перейти в проект</span>
+													<div class="sLast__link"><span>Перейти в проект</span>
 														<svg class="icon icon-arrow-right ">
 															<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
 														</svg>
-													</a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 							<div class="swiper-pagination d-lg-none"></div>

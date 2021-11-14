@@ -77,7 +77,7 @@ mixin sCatalogSlide(num='', mod='', fancyMod='')
 					+e.scheme(href=`img/@2x/scheme-big.png` data-fancybox=`sCatalogSlide-${fancyMod +  num + mod}`)
 						+pic(`scheme-img.png`)(class="scheme-img")
 				+e.s-col--right.col-md-6
-					+b.sm-yellow--slide=`Каркасный дом К-6 ${num + mod}`
+					+b.sm-yellow--slide(href="#")=`Каркасный дом К-6 ${num + mod}`
 					+e.chars
 						+sCatalogSlideChar('Размер', '6 х 9 м')
 						+sCatalogSlideChar('Площадь', '91 м2')

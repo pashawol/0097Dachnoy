@@ -11,13 +11,15 @@
 		}
 	}
 	//??
-	min-height: rem(700);
-	@include media-breakpoint-up(sm){
-		min-height: calc(var(--vh, 1vh)*100 - var(--header-h));
-	}
-	@include media-breakpoint-up(xl){
-		min-height: rem(910);
-	}
+
+	min-height: calc(var(--vh, 1vh)*100 - var(--header-h));
+	//min-height: rem(700);
+	//@include media-breakpoint-up(sm){
+	//	min-height: calc(var(--vh, 1vh)*100 - var(--header-h));
+	//}
+	//@include media-breakpoint-up(xl){
+	//	min-height: rem(910);
+	//}
 
 	--sPB: var(--plates-shift);
 	--sPT: #{rem(187)};
@@ -25,6 +27,9 @@
 	@include media-breakpoint-up(md) {
 		--sPT: #{rem(180)};
 		--sTPB: #{rem(50)};
+	}
+	@include media-breakpoint-up(xl){
+		--sPT: #{rem(115)};
 	}
 	@include media-breakpoint-up(xxl){
 		--sPT: #{rem(245)};
@@ -139,6 +144,7 @@
 		--bs-gutter-y: #{rem(30)};
 	}
 	&__item{
+		color: $body-color!important;
 		@include media-breakpoint-down(sm){
 			max-width: rem(285);
 			margin: 0 auto;

@@ -262,7 +262,12 @@ function eventHandler() {
 		},
 	});
 
-	// modal window
+	$(".sAbout__btn").click(function(e){
+		e.preventDefault();
+		$(this).toggleClass("active")
+		$(".sAbout__hidden-text").slideToggle();
+	})
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

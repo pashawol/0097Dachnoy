@@ -8,10 +8,18 @@
 }
 .modal-win {
 	// display: block;
-	background-color: #fff;
+	background-color: $body-color;
+	color: #fff;
 	max-width: 100%;
 	position: relative;
-	width: rem(1500);
+	width: rem(450);
+	.form-group{
+		margin-bottom: 1rem;
+	}
+	.form-wrap__checkbox{
+		display: flex;
+		margin-top: 1rem;
+	}
 	// min-height: 100%; 
 	padding: 40px;
 

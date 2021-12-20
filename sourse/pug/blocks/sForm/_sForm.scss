@@ -57,6 +57,76 @@
 		}
 	}
 
+
+	&__row{
+
+
+		margin-bottom: rem(40);
+		--bs-gutter-y: #{rem(20)};
+		@include media-breakpoint-up(sm){
+			margin-bottom: rem(60);
+			--bs-gutter-y: #{rem(24)};
+		}
+		@include media-breakpoint-up(xl){
+			--bs-gutter-x: #{rem(55)};
+			margin-bottom: rem(91);
+		}
+		//col
+		& > *{
+			@include media-breakpoint-up(lg){
+				max-width: calc(100%/ 3);
+			}
+			@include media-breakpoint-up(lg){
+				border-right: 1px solid rgba($white, .2);
+
+				&:nth-child(3n + 3){
+					border-right: 0;
+				}
+			}
+
+			&:nth-child(3n + 1){
+				--txt-mw: #{rem(350)};
+			}
+			&:nth-child(3n + 2){
+				--txt-mw: #{rem(325)};
+			}
+			&:nth-child(3n + 3){
+				--txt-mw: #{rem(307)};
+			}
+		}
+	}
+	&__txt{
+		@include media-breakpoint-down(sm){
+			max-width: var(--txt-mw);
+		}
+		font-weight: 500;
+		font-size: rem(16);
+		line-height: 1.5;
+		position: relative;
+		padding-left: rem(16);
+
+		//max-width: var(--txt-mw);
+		&:before{
+			content: '';
+			position: absolute;
+			top: rem(9);
+			left: 0;
+
+			width: rem(6);
+			height: rem(6);
+			border-radius: 50%;
+			background-color: $primary;
+
+		}
+	}
+
+	//-
+	&__{}
+	&__{}
+	&__{}
+} // end.sForm
+
+
 	.form-wrap{
 		&__row{
 			--bs-gutter-x: #{rem(20)};
@@ -135,70 +205,3 @@
 			}
 		}
 	}
-	&__row{
-
-
-		margin-bottom: rem(40);
-		--bs-gutter-y: #{rem(20)};
-		@include media-breakpoint-up(sm){
-			margin-bottom: rem(60);
-			--bs-gutter-y: #{rem(24)};
-		}
-		@include media-breakpoint-up(xl){
-			--bs-gutter-x: #{rem(55)};
-			margin-bottom: rem(91);
-		}
-		//col
-		& > *{
-			@include media-breakpoint-up(lg){
-				max-width: calc(100%/ 3);
-			}
-			@include media-breakpoint-up(lg){
-				border-right: 1px solid rgba($white, .2);
-
-				&:nth-child(3n + 3){
-					border-right: 0;
-				}
-			}
-
-			&:nth-child(3n + 1){
-				--txt-mw: #{rem(350)};
-			}
-			&:nth-child(3n + 2){
-				--txt-mw: #{rem(325)};
-			}
-			&:nth-child(3n + 3){
-				--txt-mw: #{rem(307)};
-			}
-		}
-	}
-	&__txt{
-		@include media-breakpoint-down(sm){
-			max-width: var(--txt-mw);
-		}
-		font-weight: 500;
-		font-size: rem(16);
-		line-height: 1.5;
-		position: relative;
-		padding-left: rem(16);
-
-		//max-width: var(--txt-mw);
-		&:before{
-			content: '';
-			position: absolute;
-			top: rem(9);
-			left: 0;
-
-			width: rem(6);
-			height: rem(6);
-			border-radius: 50%;
-			background-color: $primary;
-
-		}
-	}
-
-	//-
-	&__{}
-	&__{}
-	&__{}
-} // end.sForm

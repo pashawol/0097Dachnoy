@@ -55,12 +55,12 @@ mixin sCatalogTab(mod='', activeClasses='', fancyMod='')
 	.tabs__content(class=activeClasses)
 		+e.slider-wrap
 			.swiper.sCatalogTab-slider-js
+				+e.arrow-cont
+					+arrow()
 				.swiper-wrapper
 					+sCatalogSlide('', '', fancyMod)
 					+sCatalogSlide('2sl ', mod, fancyMod)
 					+sCatalogSlide('3sl ', mod, fancyMod)
-				+e.arrow-cont
-					+arrow()
 
 mixin sCatalogLink(txt, activeClasses='')
 	.col-auto
@@ -83,7 +83,7 @@ mixin sCatalogSlide(num='', mod='', fancyMod='')
 						+sCatalogSlideChar('Площадь', '91 м2')
 						+sCatalogSlideChar('Этажность', '1 + мансарда')
 						+sCatalogSlideChar('Стоимость', 'от 1 960 000 руб.')
-					+e.s-btn(href="#") Заказать расчет
+					+e.s-btn(href="#modal-call").link-modal-js Заказать расчет
 
 mixin sCatalogSlideChar(key, val)
 	+e.char
